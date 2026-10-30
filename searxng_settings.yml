@@ -31,8 +31,8 @@ server:
   method: "GET"
 
 outgoing:
-  request_timeout: 8.0
-  max_request_timeout: 20.0
+  request_timeout: 12.0
+  max_request_timeout: 25.0
   pool_connections: 50
   pool_maxsize: 10
   enable_http2: true
