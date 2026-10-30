@@ -1,6 +1,8 @@
 logs/
 penny-stocks-investing/
 penny_results/**/talent.db
+penny_results/**/talent.db-shm
+penny_results/**/talent.db-wal
 penny_results/**/raw/
 penny_results/**/live/
 penny_results/**/ollama_serve.log

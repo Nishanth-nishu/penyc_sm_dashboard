@@ -20,10 +20,10 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 
 | | |
 |---|---|
-| Companies scored | 100 of 100 (job 49406 export); 98 weak, 2 middling: Tenax Therapeutics 30.3, GACM Technologies 25.9 |
-| Companies with named people | 93 (web search named people at 17 of the 24 that filings left empty; still empty: AGOL, CHANDRIMA, ESSENTIA, EXXARO, GROWINGTON, SIKKO, WORTH). 137 people carry profile links from the `profiles` stage |
+| Companies scored | 100 of 100 (job 49508 export); 98 weak, 2 middling: Tenax Therapeutics 30.3, GACM Technologies 25.9 |
+| Companies with named people | 96 (1352 people; the web pass named people at 21 of the 24 that filings left empty; still empty: AGOL, CHANDRIMA, ESSENTIA, JZ). 646 people carry profile links from the `profiles` stage; 0 role/company/agency names remain after the resolve filter |
 | Still skipped | none. The 8 loopers (A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV) are scored since job 48860 (`num_predict: 4096` cap) |
-| Job in progress | 49508 (ihub GPU, queued 30 Oct 19:13 UTC): web-search enrich with the LLM + resolve + profiles + score over **all 100 companies**, fresh search cache, from 49406's DB; also applies the new person-name filter in resolve to every company. Last finished: 49475 (GPU, no change: stale node cache) after 49406 (CPU search pass, 24 of 35 companies gained people) |
+| Job in progress | none. Last finished: 49508 (gnode095 GPU, 30 Oct 19:14-20:43 UTC, 1 h 29 min, 0 errors): LLM web pass over **all 100 companies** with a fresh search cache from 49406's DB. Restore DB for any further rerun: `penny_results/49508/talent.db` |
 | Website | **Live at https://penycsmdashboard.vercel.app/** (Vercel project `penyc_sm_dashboard`, team nishanth-nishus-projects, Git-connected to this repo). `vercel.json` serves `docs/` as a static site with no build step; every push to `main` redeploys in under a minute. GitHub Pages is not used. |
 | Results note | `PENNY_RESULTS.md` (numbers, top 10, failure analysis, rerun history) |
 
@@ -167,6 +167,10 @@ python3 build_site.py penny_results/<job> && git add docs && git commit -m "site
    read back as hits. `PENNY_FRESH_SEARCH=1` added. Found 115 non-person "people" (roles,
    companies, agencies, lone first names) → `plausible_person_name` + page relevance check in
    resolve (ada-fixes 18c10d7). Job 49508 submitted: LLM web pass over all 100 companies.
+16. Job 49508 (gnode095, 1 h 29 min, 455 Ollama calls, 0 errors): web pass over all 100. 96 of 100 with
+   people, 0 non-person names left (118 before), 646 people with profile links (102 before), web_page
+   docs 114 → 319. Site rebuilt from 49508 with its own overviews (commit 9ea924f). Still empty: AGOL,
+   CHANDRIMA, ESSENTIA, JZ.
 
 ## 6. Cluster lessons (read before running anything)
 

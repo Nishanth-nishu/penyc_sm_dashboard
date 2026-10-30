@@ -1,6 +1,6 @@
 # Penny-stocks talent pipeline: results
 
-Current state (after rerun job 47991, 30 Oct 2026): **92 of 100 companies scored**, 65 with named people, 8 still skipped by Ollama timeouts (A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV). The website and `docs/` are built from `penny_results/47991/`, which holds the complete export.
+Current state (after the full-universe web pass, job 49508, 31 Oct 2026): **100 of 100 companies scored**, 96 with named people (1352 people, none of them a role, company or agency name any more), 646 people with profile links. The website and `docs/` are built from `penny_results/49508/`, which holds the complete export and this run's own overviews.
 
 ## Full run (job 46482)
 
@@ -31,8 +31,8 @@ Vercel redeploys the site about a minute after the push.
 | | |
 |---|---|
 | Companies processed | 100 (50 India, 50 US) |
-| Companies with at least one named person | 50 (93 after reruns and the web-search pass) |
-| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 7 after reruns and web search: AGOL, CHANDRIMA, ESSENTIA, EXXARO, GROWINGTON, SIKKO, WORTH |
+| Companies with at least one named person | 50 (96 after reruns and the web-search passes; 1352 people in all) |
+| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 4 after reruns and web search: AGOL, CHANDRIMA, ESSENTIA, JZ (JZ's only "person" was its own company name, now filtered) |
 | Score band | 98 "weak" (< 25) and 2 "middling" (25-50) after reruns: Tenax Therapeutics 30.3, GACM Technologies 25.9 |
 | Going-concern flags | 24 (35 after reruns) |
 | Reverse-merger flags | 9 (12 after reruns) |
@@ -42,16 +42,16 @@ Top 10 by talent score:
 
 | Market | Ticker | Name | Score | Coverage | People |
 |---|---|---|---|---|---|
-| us | TENX | Tenax Therapeutics (added by rerun 48860) | 30.3 | 0.70 | 17 |
-| india | GATECH | GACM Technologies (added by rerun 48860) | 25.9 | 0.60 | 17 |
-| india | URJA | Urja Global | 23.2 | 0.60 | 33 |
-| india | IVC | IL&FS Investment Managers | 21.6 | 0.52 | 10 |
-| india | AVROIND | Avro India | 21.5 | 0.21 | 13 |
-| india | EVEXIA | Evexia Lifecare | 21.0 | 0.60 | 23 |
-| india | LANDSMILL | Landsmill Green | 21.0 | 0.60 | 23 |
-| us | DAVI | Davion Healthcare | 21.0 | 0.60 | 8 |
-| india | VSL | Viram Suvarn (added by rerun 47396) | 21.0 | 0.45 | 22 |
-| india | STARLENT | StarlinePS Enterprises | 20.3 | 0.60 | 16 |
+| us | TENX | Tenax Therapeutics, Inc. | 30.3 | 0.80 | 22 |
+| india | GATECH | GACM Technologies Limited | 25.9 | 0.70 | 20 |
+| india | URJA | Urja Global Limited | 23.2 | 0.70 | 33 |
+| india | AVROIND | Avro India Limited | 22.6 | 0.33 | 15 |
+| india | GANGAFORGE | Ganga Forging Limited | 21.8 | 0.28 | 20 |
+| india | IVC | IL&FS Investment Managers Limited | 21.6 | 0.70 | 15 |
+| india | EVEXIA | Evexia Lifecare Limited | 21.0 | 0.60 | 23 |
+| india | LANDSMILL | Landsmill Green Limited | 21.0 | 0.60 | 22 |
+| india | VSL | Viram Suvarn Limited | 21.0 | 0.37 | 17 |
+| us | DAVI | Davion Healthcare Plc | 21.0 | 0.70 | 9 |
 
 The ranking is driven almost entirely by the momentum component (headcount / hiring / insider data); leadership is 10 or less for nearly every company and technical bench is 0 everywhere, which is what an 8B model extracting from microcap filings produces.
 
@@ -147,8 +147,27 @@ lone first names ("Priyanka"), plus a few real people from a web page about an u
 "A1 Limited"). The resolve stage now drops such mentions (`plausible_person_name`, and the relevance filter applied to
 the page a mention came from), so the next resolve over all companies cleans this up.
 
-`penny_results/49406/` is the most complete export so far (100 scored, 93 with people); use its `talent.db` as
-`PENNY_RESTORE_DB` for any further rerun. Its `overviews.*` are copied from 48860 (CPU jobs skip the overview step).
+**Job 49508 (gnode095, RTX 3080 Ti, 30 Oct 2026 19:14-20:43 UTC / 31 Oct 00:44-02:13 IST): 96 of 100 with people, exit 0.**
+The LLM web pass over **all 100 companies** (`PENNY_MODE=rerun`, every ticker, `PENNY_STAGES=enrich,resolve,profiles,score
+PENNY_ENRICH_PARTS=web PENNY_FRESH_SEARCH=1`, DB restored from 49406), 1 h 29 min, 455 Ollama calls, 2 truncated outputs
+dropped, 0 errors. Yahoo and Brave answered most of the time; Brave was suspended for "too many requests" and DuckDuckGo
+for CAPTCHA in stretches (32 suspension lines in `searxng.log`), so a few companies' person-specific queries came back
+empty (Chartered Logistics, Alaunos). The relevance filter dropped unrelated results 293 times; the new resolve filter
+dropped 349 mentions across 56 companies (A1L 9 of 40, AMOD 13 of 59, SDEV 15 of 67, SOAR 12 of 27). Outcome against 49406:
+web_page documents 114 → 319, search-snippet mentions 90 → 411, web_page mentions 8 → 73; people 1231 → 1352 even though
+every non-person name is gone (0 left, 118 before); `profile_url` claims 236 → 1497 on 646 people (marketscreener,
+Bloomberg profiles, thecompanycheck, Crunchbase, LinkedIn posts, Equilar). EXXARO, GROWINGTON, SIKKO and WORTH gained
+their first people (e.g. Nimit and Bina Ghatalia at Worth, the Kumbhani brothers at Sikko, Sunita Gupta, CS at Growington);
+JZ lost its one "person", which was the company's own name. **96 of 100 companies now have named people**; still empty:
+AGOL, CHANDRIMA, ESSENTIA, JZ. Scores: 98 weak / 2 middling unchanged at the top (TENX 30.3, GATECH 25.9), GANGAFORGE
+11.7 → 21.8 (20 people with titles), DGXX 7.2 → 15.1, WORTH 10.5 → 17.0, OMEGAIN 10.5 → 16.3, SIKKO 7.5 → 12.3. Cleaning
+the fake people lowered a few US names slightly (A1L 24 → 15 people, SDEV 29 → 21, AMOD 30 → 23; JZ 9.9 → 7.5, XHG 10.4 → 8.2).
+Noise to know about: 223 people sit below confidence 0.5 (47 before) because search snippets now add rank-and-file staff
+("Territory executive", "MLOps Engineer") as `named_staff`; namesakes still slip through for generic company names
+(Bridge Securities, Empower India). The site is built from this run, overviews included.
+
+`penny_results/49508/` is the most complete export (100 scored, 96 with people, own overviews); use its `talent.db` as
+`PENNY_RESTORE_DB` for any further rerun.
 
 ## Rerunning companies
 
@@ -160,4 +179,4 @@ talent export
 .venv/bin/python /home2/nishanth.r/penyc_sm_dashboard/summarize_overviews.py --db data/talent.db --out <results dir>
 ```
 
-Scratch is per node and purged after ~7–10 days; `PENNY_RESTORE_DB=penny_results/47991/talent.db` restores the latest state on a fresh node.
+Scratch is per node and purged after ~7–10 days; `PENNY_RESTORE_DB=penny_results/49508/talent.db` restores the latest state on a fresh node.
