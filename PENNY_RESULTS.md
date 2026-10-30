@@ -16,13 +16,15 @@ Outputs in `penny_results/46482/`:
 
 ## Website
 
-The results are published as a GitHub Pages site (live since 2026-10-30 11:00 UTC) built from `docs/` by `build_site.py`:
-https://nishanth-nishu.github.io/penyc_sm_dashboard/ (summary and leaderboard, interactive dashboard,
-all company overviews with a text filter, scores.csv). Rebuild after a new run with
+The results are published at **https://penycsmdashboard.vercel.app/** (Vercel, deployed from `docs/`, which
+`build_site.py` writes: summary and leaderboard, interactive dashboard, all company overviews with a text
+filter, scores.csv). Rebuild after a new run with
 
 ```bash
 python3 build_site.py penny_results/<jobid> && git add docs && git commit -m "site: job <jobid>" && git push
 ```
+
+Vercel redeploys the site about a minute after the push.
 
 ## Headline numbers
 

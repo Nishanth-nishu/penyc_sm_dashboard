@@ -1,6 +1,6 @@
 # Penny-stocks talent pipeline on Ada: handover
 
-Last updated 2026-10-30 12:00 UTC (17:30 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
+Last updated 2026-10-30 12:05 UTC (17:35 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
 human or Claude session. Everything here lives in this repo (`penyc_sm_dashboard`, folder
 checked out at `/home2/nishanth.r/penyc_sm_dashboard` on the Ada login node) except the private
 pipeline repo and the job outputs that are too big for git.
@@ -24,7 +24,7 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 | Companies with named people | 65 |
 | Still skipped | 8: A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV (model loops on their first chunk even at 15000 chars; needs a `num_predict` cap in the pipeline, see PENNY_RESULTS.md) |
 | Job in progress | none. Last: 47991 on gnode049 (30 Oct 08:09-09:04 UTC), recovered AMOD, JZ, ALEC |
-| Website | `docs/` is a static site, deployed with **Vercel** (not GitHub Pages). `vercel.json` sets the output directory to `docs` with no build step, so importing this repo at https://vercel.com/new deploys it as-is and redeploys on every push to `main`. CLI alternative from any machine with Node: `npx vercel --prod` inside the checkout. |
+| Website | **Live at https://penycsmdashboard.vercel.app/** (Vercel project `penyc_sm_dashboard`, team nishanth-nishus-projects, Git-connected to this repo). `vercel.json` serves `docs/` as a static site with no build step; every push to `main` redeploys in under a minute. GitHub Pages is not used. |
 | Results note | `PENNY_RESULTS.md` (numbers, top 10, failure analysis, rerun history) |
 
 ## 3. Where things live
