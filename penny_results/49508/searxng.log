@@ -1,0 +1,670 @@
+2026-10-31 00:44:29,118 ERROR:searx: Error while getting the version: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2026-10-31 00:44:29,120 ERROR:searx: Error while getting the git URL & branch: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2026-10-31 00:44:29,362 WARNING:searx.cache: [DATA_CACHE] hash token changed: truncate all cache tables
+2026-10-31 00:44:29,366 WARNING:searx.cache: [ENGINES_CACHE] hash token changed: truncate all cache tables
+2026-10-31 00:44:29,397 ERROR:searx.engines: (PID 3319561) ahmia: can't register engine (loading engine failed)
+2026-10-31 00:44:29,715 ERROR:searx.engines: (PID 3319561) torch: can't register engine (loading engine failed)
+2026-10-31 00:44:29,822 WARNING:searx.botdetection.config: missing config file: /scratch/nishanth.r/searxng/limiter.toml
+ * Serving Flask app 'webapp'
+ * Debug mode: off
+2026-10-31 00:44:30,582 ERROR:searx.botdetection: X-Forwarded-For nor X-Real-IP header is set!
+2026-10-31 00:44:42,603 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:44:42,637 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:44:42,701 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:44:54,997 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22A-1%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-31 00:44:55,000 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:45:06,697 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:45:06,703 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:45:06,710 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:45:18,706 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:45:18,716 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:45:18,718 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:45:30,712 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:45:30,722 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:45:30,723 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:45:42,718 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:45:42,728 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:45:42,730 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:45:54,724 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:45:54,734 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:45:54,736 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:46:06,730 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:46:06,737 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:46:06,739 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:46:24,821 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:46:24,826 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:46:24,828 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:46:43,242 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:46:43,263 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:46:43,266 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:46:55,260 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:46:55,273 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:46:55,277 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:47:07,271 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:47:07,278 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:47:07,280 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:47:24,714 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:47:24,721 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:47:24,723 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:48:20,621 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:48:20,627 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:48:20,632 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:48:25,463 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Kamlesh+Jain%22+%22Akme+Fintrade+%28India%29%22&source=web
+2026-10-31 00:48:25,465 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:48:38,099 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:48:38,107 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:48:38,109 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:48:55,377 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:48:55,385 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:48:55,386 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:49:12,861 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:49:12,866 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:49:12,868 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:49:38,498 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:49:38,508 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:49:38,516 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:49:50,513 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:49:50,519 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:49:50,527 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:50:02,522 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:50:02,530 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:50:02,538 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:50:14,533 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:50:14,540 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:50:14,547 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:50:26,543 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:50:26,549 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:50:26,555 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:50:38,553 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:50:38,562 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:50:38,564 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:51:04,044 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:51:04,049 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:51:04,051 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:51:21,289 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:51:21,295 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:51:21,297 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:51:27,180 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Avance+Technologies%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-31 00:51:27,182 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:51:38,872 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:51:38,878 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:51:38,883 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:51:50,881 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:51:50,888 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:51:50,894 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:52:02,894 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:52:02,904 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:52:02,907 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:52:14,904 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:52:14,910 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:52:14,915 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:52:26,914 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:52:26,919 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:52:26,921 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:52:53,467 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:52:53,475 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:52:53,480 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:53:11,189 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:53:11,195 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:53:11,198 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:53:35,762 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:53:35,806 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:53:35,807 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:53:47,775 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:53:47,783 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:53:47,784 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:54:04,917 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:54:04,924 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:54:04,928 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:54:22,467 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:54:22,473 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:54:22,476 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:54:34,479 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:54:34,483 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:54:34,484 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:54:58,403 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:54:58,409 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:54:58,411 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:54:58,802 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Blue+Pearl+Agriventures%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-31 00:54:58,803 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:55:15,647 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:55:15,653 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:55:15,660 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:55:27,658 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:55:27,663 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:55:27,665 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:55:50,570 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:55:50,615 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:55:50,617 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:56:02,582 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:56:02,588 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:56:02,592 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:56:20,830 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:56:20,836 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:56:20,845 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:56:32,842 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:56:32,849 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:56:32,852 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:56:50,344 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:56:50,351 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:56:50,356 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:57:02,356 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:57:02,362 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:57:02,364 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:57:31,562 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:57:31,568 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:57:31,572 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:57:38,217 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 00:57:39,847 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 00:58:09,685 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Consecutive+Commodities%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-31 00:58:09,687 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:58:09,938 WARNING:searx.network.duckduckgo: HTTP Request failed: POST https://html.duckduckgo.com/html/
+2026-10-31 00:58:09,940 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineAccessDeniedException', None, ('HTTP error 403 (suspended_time=180)',)) False
+2026-10-31 00:59:50,949 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.HTTPError', None, ('0', 'OK', 'search.yahoo.com')) False
+2026-10-31 01:00:52,126 ERROR:searx.engines.wikidata: engine timeout
+2026-10-31 01:00:52,130 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 01:00:52,134 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-31 01:01:25,022 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Jaivikkumar+Patel%22+%22Cropster+Agro%22&source=web
+2026-10-31 01:01:25,024 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:01:26,975 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:01:32,636 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:01:54,645 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:01:57,088 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:02,206 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:16,370 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:17,396 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:18,694 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:20,413 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:23,296 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:24,705 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:02:26,288 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:03:11,136 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:03:35,978 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:03:41,619 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:03:44,858 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:05,432 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:19,436 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:25,989 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:26,617 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Empower+India%22+%22board+of+directors%22+OR+%22leadership+team%22+OR+%22management+team%22+OR+%22key+managerial+personnel%22&source=web
+2026-10-31 01:04:26,620 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:04:27,042 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:27,994 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:40,546 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:41,548 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:47,502 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:48,621 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:50,290 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:04:51,271 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:05:22,600 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:05:23,702 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:05:24,681 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:06,908 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:09,528 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:11,312 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:28,968 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:34,721 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:36,000 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:06:37,432 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:08:19,812 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:08:24,551 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Rakesh+Chhaganlal+Patel%22+%22Ganga+Forging%22&source=web
+2026-10-31 01:08:24,554 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:08:47,101 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:08:48,582 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:08:49,933 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:02,775 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:22,896 ERROR:searx.engines.wikidata: engine timeout
+2026-10-31 01:09:22,902 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 01:09:22,904 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-31 01:09:27,278 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:28,270 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:29,773 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:41,167 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:44,096 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:46,059 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:47,130 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:09:48,097 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:14,747 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:16,657 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:19,428 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:20,411 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:21,606 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:39,121 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:41,801 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:44,223 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:45,269 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:52,343 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:54,783 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:55,760 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:10:59,579 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:00,533 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:01,512 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:22,963 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:23,973 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:26,280 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Neelesh+Vernekar%22+%22IL%26FS+Investment+Managers%22&source=web
+2026-10-31 01:11:26,283 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:11:26,541 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:29,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:30,769 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:32,192 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:52,983 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:11:57,438 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:01,424 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:04,296 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:05,294 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:06,344 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:21,699 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:26,101 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:27,143 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:32,134 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:35,290 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:36,448 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:37,555 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:56,398 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:57,353 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:59,339 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:12:59,864 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:13:01,480 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:02,452 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:03,573 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:29,037 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:34,074 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:34,819 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:51,888 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:53,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:13:55,409 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:56,483 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:13:57,477 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:11,491 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:17,309 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:18,309 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:19,463 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:33,984 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Apoorva+Shah%22+%22NHC+Foods%22&source=web
+2026-10-31 01:14:33,988 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:14:36,743 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:39,938 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:46,423 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:47,531 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:48,556 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:14:51,160 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:13,728 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.HTTPError', None, ('0', 'OK', 'search.yahoo.com')) False
+2026-10-31 01:16:15,345 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:22,740 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:23,214 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:16:24,893 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:25,851 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:27,029 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:16:53,853 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:01,094 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:03,219 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:04,182 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:27,085 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:29,188 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:30,494 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:17:31,463 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:12,565 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Rohit+Gupta%22+%22Sarveshwar+Foods%22&source=web
+2026-10-31 01:18:12,568 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:18:26,132 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:29,494 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:30,486 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:31,965 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:53,289 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:54,440 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:18:55,394 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:27,779 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:29,788 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:31,392 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:33,559 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:34,481 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:35,391 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:51,495 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:52,539 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:55,593 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:56,547 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:57,674 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:58,860 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:19:59,841 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:02,982 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:04,077 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:05,034 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:21,863 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:23,402 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:27,178 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:28,188 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:29,412 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:41,093 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:45,496 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:46,506 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:20:47,636 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:00,440 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:03,622 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:04,705 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:05,651 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:18,738 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Yogesh+Kumar+Goyal%22+%22Urja+Global%22&source=web
+2026-10-31 01:21:18,742 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:21:28,093 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:29,067 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:30,100 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:34,766 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:35,739 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:36,708 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:54,880 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:55,891 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:21:59,935 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:02,428 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:04,996 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:06,165 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:07,149 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:08,260 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:09,269 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:10,236 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:11,384 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:18,145 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:23,737 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:29,874 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:31,006 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:32,018 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:22:32,957 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:13,559 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:19,136 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:23:21,420 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:22,394 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:23,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:42,344 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:43,381 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:23:44,257 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:13,472 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22H.+David+Sherman%22+%22Xiao-I%22&source=web
+2026-10-31 01:26:13,474 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:26:17,800 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:18,807 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:19,778 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:35,005 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:44,361 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:45,385 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:48,231 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:50,840 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:52,448 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:26:54,313 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:27:40,444 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:27:41,846 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:27:43,130 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:28:20,364 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:28:27,351 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:28:31,406 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:28:32,624 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:28:34,069 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:31:13,712 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Erick+Frim%22+%22Apimeds+Pharmaceuticals+US%22&source=web
+2026-10-31 01:31:13,716 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:31:31,253 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:31:33,028 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:31:35,124 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:31:36,014 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:03,191 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:06,851 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:07,842 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:10,762 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:34,523 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:51,235 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:53,144 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:32:54,341 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:33:32,303 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:33:33,271 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:33:34,819 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:09,512 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:10,547 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:16,124 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Yuejun+Jiang%22+%22BTC+Digital%22&source=web
+2026-10-31 01:34:16,127 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:34:17,990 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:19,061 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:20,446 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:23,345 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:25,184 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:26,336 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:34:28,133 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:10,530 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:21,863 ERROR:searx.engines.wikidata: engine timeout
+2026-10-31 01:35:21,870 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 01:35:21,872 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-31 01:35:22,537 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:24,338 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:25,394 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:26,188 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:37,615 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:38,426 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:35:39,366 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:12,780 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:14,039 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:14,993 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:37,793 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:42,638 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:44,153 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:45,830 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:36:47,837 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:39:29,318 ERROR:searx.engines.yahoo: engine timeout
+2026-10-31 01:39:29,328 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 01:39:29,337 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'search.yahoo.com')) False
+2026-10-31 01:39:29,656 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Edmund+Nabrotzky%22+%22CID+HoldCo%22&source=web
+2026-10-31 01:39:29,658 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:39:43,118 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:39:45,980 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:39:47,085 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:39:48,168 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:40:25,143 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:40:26,544 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:40:30,063 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:40:58,375 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:04,553 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:05,675 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:07,473 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:12,311 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:13,953 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:15,347 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:16,307 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:51,639 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:41:55,835 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:00,177 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:00,957 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:02,160 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:46,114 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Kevin+Cox%22+%22Energys+Group%22&source=web
+2026-10-31 01:42:46,118 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:42:49,584 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:51,358 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:52,398 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:53,351 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:56,535 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:42:59,192 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:00,169 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:02,913 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:03,980 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:04,839 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:33,662 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 477, 'raise SearxEngineCaptchaException(suspended_time=0, message=f"CAPTCHA ({params[\'data\'].get(\'kl\')})")', 'searx.exceptions.SearxEngineCaptchaException', None, ('CAPTCHA (us-en) (suspended_time=0)',)) False
+2026-10-31 01:43:35,294 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:36,551 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:43:38,627 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:44:18,647 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:44:20,465 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:44:22,035 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:01,440 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:02,844 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:04,605 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:30,744 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:31,844 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:33,886 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:35,539 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:36,995 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:45:54,909 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Tony+Bates%22+%22GoPro%22&source=web
+2026-10-31 01:45:54,915 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:45:56,874 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:05,287 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:12,507 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:13,526 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:14,748 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:55,529 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:56,886 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:46:58,120 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:47:17,707 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:47:30,287 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:47:31,673 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:47:32,682 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:47:34,765 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:03,325 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:04,373 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:06,882 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:08,868 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:10,871 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:11,745 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:14,050 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:29,171 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:33,517 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:35,030 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:38,433 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:48:55,819 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Brian+Norton%22+%22DataMEDS+AI%22&source=web
+2026-10-31 01:48:55,822 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:48:57,350 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:08,640 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:10,505 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:12,004 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:13,410 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:25,207 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:26,364 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:29,438 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:30,601 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:49:32,230 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:01,091 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:05,660 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:06,641 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:08,171 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:29,147 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:41,981 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:43,567 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:50:44,676 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:20,402 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:22,465 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:23,656 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:24,875 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:41,981 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:44,167 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:45,514 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:47,753 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:51:48,736 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:02,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:03,552 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Tommy+Law%22+%22Stablecoin+Development+Corporat%22&source=web
+2026-10-31 01:52:03,556 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:52:04,174 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:05,615 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:07,226 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:08,520 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:09,596 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:11,765 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:13,500 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:15,542 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:17,079 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:18,312 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:20,599 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:23,308 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:24,466 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:27,215 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:49,969 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:53,117 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:54,140 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:52:55,654 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:19,950 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:20,950 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:22,303 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:54,684 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:57,007 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:58,127 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:53:59,417 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:16,183 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:17,517 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:22,710 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:24,020 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:26,743 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:27,735 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:29,339 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:30,361 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:32,666 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.HTTPError', None, ('0', 'OK', 'search.yahoo.com')) False
+2026-10-31 01:54:33,377 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:34,368 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:36,732 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:53,833 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:54:57,149 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:00,246 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:02,342 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:03,323 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:03,962 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Tenax+Therapeutics%22+appoints+OR+appointed+OR+resigns+OR+%22steps+down%22+OR+%22new+CEO%22&source=web
+2026-10-31 01:55:03,964 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:55:04,316 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:32,607 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:36,175 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:37,248 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:38,340 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:41,430 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:43,453 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:55:46,684 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:56:28,100 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:56:29,221 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:56:30,164 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:56:32,036 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:22,125 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:23,084 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:24,509 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:27,040 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:28,106 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:29,169 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:30,448 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:31,432 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:32,592 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:33,611 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:48,879 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:53,010 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:57,071 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:58,687 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:57:59,686 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:15,726 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Chris+Kohler%22+%22SCWorx%22&source=web
+2026-10-31 01:58:15,728 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 01:58:20,037 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:29,122 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:30,504 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:31,373 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:32,362 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:44,161 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:46,173 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:47,338 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:55,270 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:56,249 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:58:58,259 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:18,042 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:21,020 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:29,968 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:31,498 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:32,223 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 01:59:34,009 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:01,864 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:02,994 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:04,024 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:34,889 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:42,583 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:46,598 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:47,794 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:00:49,070 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:13,767 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:14,730 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:16,157 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Brian+Schaffner%22+%22Expion+Energy%22&source=web
+2026-10-31 02:01:16,160 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 02:01:17,461 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:18,843 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:21,192 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:33,714 ERROR:searx.engines.wikidata: engine timeout
+2026-10-31 02:01:33,722 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 02:01:33,724 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-31 02:01:34,359 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:37,207 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:37,988 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:01:38,896 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:04:51,327 WARNING:searx.engines.duckduckgo: ErrorContext('searx/engines/duckduckgo.py', 500, 'url=eval_xpath(div_result, ".//h2/a/@href")[0],', 'IndexError', None, ()) False
+2026-10-31 02:04:55,958 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Sam+Van%22+%22J-Star+Holding%22&source=web
+2026-10-31 02:04:55,961 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
