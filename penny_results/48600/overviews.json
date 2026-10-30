@@ -1,0 +1,211 @@
+[
+ {
+  "company_id": "india:AXITA",
+  "ticker": "AXITA",
+  "name": "Axita Cotton Limited",
+  "market": "india",
+  "talent_score": 7.5,
+  "coverage": 0.13,
+  "overview": "(summary failed: [Errno 111] Connection refused)",
+  "facts": {
+   "name": "Axita Cotton Limited",
+   "ticker": "AXITA",
+   "market": "india",
+   "exchange": "NSE",
+   "sector": "consumer",
+   "industry": "Textile Manufacturing",
+   "description": "Axita Cotton Limited engages in manufacturing, processing, finishing, and trading of cotton bales, yarns, seeds, and agri commodities in India and internationally. The company also engages in ginning and pressing of kapas on job work basis, as well as provision of other financial services. It serves traders, manufacturers, and merchant exporters. The company was founded in 2007 and is based in Ahmedabad, India.",
+   "website": "https://axitacotton.com",
+   "price": 7.19,
+   "currency": "INR",
+   "market_cap": 2751422720.0,
+   "headcount": 6243,
+   "headcount_as_of": "2026-03-31",
+   "talent_score_0_100": 7.5,
+   "coverage_0_1": 0.13,
+   "score_components": {
+    "leadership": 0.0,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 0.2,
+    "integrity": 0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-03-31",
+    "last_annual_report_date": "2026-03-31"
+   },
+   "leadership": [
+    "AXITA COTTON LIMITED (2026 Company Profile & Financials)",
+    "Axita Cotton Ltd. (- Company Brief - India Advantage)",
+    "Key Management (Axita Cotton Limit)",
+    "Kushal Patel (Managing Director at Axita Cotton Limited)"
+   ],
+   "named_people_total": 4
+  }
+ },
+ {
+  "company_id": "india:GENNEX",
+  "ticker": "GENNEX",
+  "name": "Gennex Laboratories Limited",
+  "market": "india",
+  "talent_score": 8.1,
+  "coverage": 0.16,
+  "overview": "(summary failed: [Errno 111] Connection refused)",
+  "facts": {
+   "name": "Gennex Laboratories Limited",
+   "ticker": "GENNEX",
+   "market": "india",
+   "exchange": "BSE",
+   "sector": "pharma",
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "description": "Gennex Laboratories Limited manufactures and sells bulk drugs, intermediates, and biotech products. The company offers Guaifenesin, an expectorant used as a mucolyte; Methocarbamol for skeletal muscle relaxant; Fexofenadine Hcl for treating antihistamines; Phenazopyridine Hcl for the treatment of urinary tract analgesic; Fluconazole for antifungals; Melitracen Hcl for treating tricyclic antidepressant; Sertraline Hcl, a selective serotonin reuptake inhibitor; Chlorphenesin and Mephenesin; and Allopurinol, a xanthine oxidase inhibitor. It has operations in India, Algeria, Bangladesh, Barzil, Bolivia, Colombia, the Czech Republic, Egypt, El Salvador, Germany, Guatemala City, Mexico, Peru, Spain, Turkey, Thailand, the United Arab Emirates, and Vietnam. Gennex Laboratories Limited was formerly known as Prudential Pharmaceuticals Limited and changed its name to Gennex Laboratories Limited in September 2007. Gennex Laboratories Limited was incorporated in 1985 and is based in Hyderabad, India.",
+   "website": "https://www.gennexlab.com",
+   "price": 8.02,
+   "currency": "INR",
+   "market_cap": 1948440448.0,
+   "headcount": 364,
+   "headcount_as_of": "2023-03-31",
+   "talent_score_0_100": 8.1,
+   "coverage_0_1": 0.16,
+   "score_components": {
+    "leadership": 0.0,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 6.4,
+    "integrity": 0
+   },
+   "red_flags": {
+    "last_filing_date": "2024-03-31",
+    "last_annual_report_date": "2024-03-31"
+   },
+   "leadership": [
+    "Anita Johnson (Gennex Laboratories Limited - LinkedIn Nigeria)",
+    "Arihant Baid (MD at Gennex Laboratories Ltd.)",
+    "GENNEX LABORATORIES LIMITED (ZaubaCorp)",
+    "Gennex Laboratories Company Details (Investing.com India)",
+    "Gennex Laboratories Future Growth (Simply Wall St)",
+    "Gennex Laboratories Ltd. (The Economic Times)",
+    "Tiruvarur Gopalakrishnan (Executive Director at Gennex Labs Ltd.)"
+   ],
+   "named_people_total": 7
+  }
+ },
+ {
+  "company_id": "us:IPDN",
+  "ticker": "IPDN",
+  "name": "Professional Diversity Network, Inc.",
+  "market": "us",
+  "talent_score": 4.2,
+  "coverage": 0.27,
+  "overview": "(summary failed: [Errno 111] Connection refused)",
+  "facts": {
+   "name": "Professional Diversity Network, Inc.",
+   "ticker": "IPDN",
+   "market": "us",
+   "exchange": "NasdaqCM",
+   "sector": "industrial",
+   "industry": "Staffing & Employment Services",
+   "description": "Professional Diversity Network, Inc. operates online professional networking communities with career resources in the United States. It operates through three segments: TalentAlly, National Association of Professional Women (NAPW Network), and RemoteMore USA. The company offers recruitment services, such as single and multiple job postings, recruitment media, talent recruitment communities, corporate memberships, hiring campaign marketing and advertising, e-newsletter marketing, and research and outreach services to various cultural groups and employers; and licensing and promotional activities for copyright products. It also provides consumer advertising and consumer marketing solutions through advertising and job postings on its websites; and contracted software development services. In addition, the company offers IAW Leadership Lab, which provides virtual networking roundtable events; Professional Identity Management through the NAPW network website and members creates, manages, and shares professional identity online and promote themselves and businesses; monthly newsletters, online and in-person seminars, webinars and certification courses to develop their skills and expand t",
+   "website": "https://www.ipdn.com",
+   "price": 1.98,
+   "currency": "USD",
+   "market_cap": 1318305.0,
+   "headcount": 34,
+   "headcount_as_of": "2025-12-31",
+   "talent_score_0_100": 4.2,
+   "coverage_0_1": 0.27,
+   "score_components": {
+    "leadership": 0.0,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 49.0,
+    "integrity": 55.0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-08-14",
+    "last_annual_report_date": "2026-03-31",
+    "going_concern": true,
+    "auditor_changes_24m": 1,
+    "evidence": [
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774925035165/ipdn20250930_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774926017232/ipdn20260331_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_8k",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774925024489/",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "Item 4.01 auditor change"
+     }
+    ]
+   },
+   "leadership": [
+    "Hao (Howard) Zhang (cxo)",
+    "Yiran Gu (cxo)",
+    "Jodi Shamblott (Senior Diversity Recruitment Specialist)",
+    "Our Leadership (Professional Diversity Network)",
+    "Professional Diversity Network, Inc. (named_staff)"
+   ],
+   "named_people_total": 5
+  }
+ },
+ {
+  "company_id": "india:URJA",
+  "ticker": "URJA",
+  "name": "Urja Global Limited",
+  "market": "india",
+  "talent_score": 23.2,
+  "coverage": 0.6,
+  "overview": "(summary failed: [Errno 111] Connection refused)",
+  "facts": {
+   "name": "Urja Global Limited",
+   "ticker": "URJA",
+   "market": "india",
+   "exchange": "NSE",
+   "sector": "technology",
+   "industry": "Solar",
+   "description": "Urja Global Limited, together with its subsidiaries, engages in the design, consultancy, integration, supply, installation, commissioning, and maintenance of off-grid and grid-connected solar power plants and decentralized solar applications in India. The company offers lithium IOB, automotive, inverter, solar, and e-rickshaw batteries under the Urja and I-volt brand names; solar study lamps, LED lanterns, solar panels and inverters, and solar home lighting solutions; Urja Solar Atta Chakki, solar water pumps, and solar rooftop systems; and e-rickshaws and e-scooters. It is also involved in mineral exploration, extraction, and processing; residential and commercial property development; and digital technology landscape. In addition, the company manufactures and distributes wide range of batteries, including automotive, industrial, and renewable energy storage solutions. Urja Global Limited was incorporated in 1992 and is based in New Delhi, India.",
+   "website": "https://urjaglobal.in",
+   "price": 8.04,
+   "currency": "INR",
+   "market_cap": 4479936512.0,
+   "headcount": 45,
+   "headcount_as_of": "2026-03-31",
+   "talent_score_0_100": 23.2,
+   "coverage_0_1": 0.6,
+   "score_components": {
+    "leadership": 10.0,
+    "technical_bench": 0.0,
+    "momentum": 65.0,
+    "density": 100.0,
+    "integrity": 0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-03-31",
+    "last_annual_report_date": "2026-03-31"
+   },
+   "leadership": [
+    "Mohan Jagdish Agarwal (Managing Director)",
+    "Yogesh Kumar Goyal (Whole Time Director)",
+    "Gajanand Gupta (Director)",
+    "Gopalsetty Prasad Rao (Director)",
+    "Mita Sinha (Director)",
+    "Mukul Jain (Director)",
+    "Payal Sharma (Director)",
+    "Saumya Srivastava (Director)"
+   ],
+   "named_people_total": 36
+  }
+ }
+]
