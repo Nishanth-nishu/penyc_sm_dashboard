@@ -1,0 +1,48 @@
+# SearXNG settings for the private, per-job instance started by searxng_env.sh.
+# __PORT__ and __SECRET__ are substituted at job start. Everything not listed here
+# comes from the SearXNG defaults (searx/settings.yml in the checkout).
+use_default_settings: true
+
+general:
+  instance_name: "penny-search"
+  debug: false
+  enable_metrics: true
+  privacypolicy_url: false
+  donation_url: false
+  contact_url: false
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  favicon_resolver: ""
+  default_lang: "en"
+  max_page: 3
+  formats:
+    - html
+    - json          # the pipeline reads /search?format=json
+
+server:
+  port: __PORT__
+  bind_address: "127.0.0.1"
+  secret_key: "__SECRET__"
+  limiter: false
+  public_instance: false
+  image_proxy: false
+  method: "GET"
+
+outgoing:
+  request_timeout: 8.0
+  max_request_timeout: 20.0
+  pool_connections: 50
+  pool_maxsize: 10
+  enable_http2: true
+
+# Engines: the defaults already enable duckduckgo, brave, startpage, qwant, mojeek and wikipedia.
+# Bing is enabled here as an extra general engine; Google stays off (CAPTCHAs from datacenter IPs).
+engines:
+  - name: bing
+    engine: bing
+    disabled: false
+  - name: wikipedia
+    engine: wikipedia
+    disabled: false

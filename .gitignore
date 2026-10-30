@@ -6,3 +6,4 @@ penny_results/**/live/
 penny_results/**/ollama_serve.log
 __pycache__/
 *.pyc
+searxng/

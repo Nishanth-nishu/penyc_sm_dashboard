@@ -1,6 +1,6 @@
 # Penny-stocks talent pipeline on Ada: handover
 
-Last updated 2026-10-30 12:05 UTC (17:35 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
+Last updated 2026-10-30 12:40 UTC (18:10 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
 human or Claude session. Everything here lives in this repo (`penyc_sm_dashboard`, folder
 checked out at `/home2/nishanth.r/penyc_sm_dashboard` on the Ada login node) except the private
 pipeline repo and the job outputs that are too big for git.
@@ -33,7 +33,7 @@ Repo files (this folder):
 
 | File | Role |
 |---|---|
-| `penny_run.sh` | The sbatch job. Stages the pipeline into node scratch, builds a Python 3.12 venv, starts Ollama, runs the pipeline, writes overviews, copies results home. Modes: pilot (default), `PENNY_MODE=full`, `PENNY_MODE=rerun`. Env knobs: `PENNY_TICKERS`, `PENNY_MODEL`, `PENNY_NUM_CTX`, `PENNY_OLLAMA_TIMEOUT`, `PENNY_CHUNK_CHARS`, `PENNY_RESTORE_DB`, `PENNY_ALLOW_CPU`. |
+| `penny_run.sh` | The sbatch job. Stages the pipeline into node scratch, builds a Python 3.12 venv, starts Ollama, runs the pipeline, writes overviews, copies results home. Modes: pilot (default), `PENNY_MODE=full`, `PENNY_MODE=rerun`. Env knobs: `PENNY_TICKERS`, `PENNY_MODEL`, `PENNY_NUM_CTX`, `PENNY_OLLAMA_TIMEOUT`, `PENNY_CHUNK_CHARS`, `PENNY_RESTORE_DB`, `PENNY_ALLOW_CPU`, `PENNY_SEARCH`. |
 | `ollama_env.sh` | Sourced inside a job: extracts the Ollama release from `/home2/nishanth.r/ollama_persist` into `/scratch/nishanth.r/ollama`, rsyncs models, starts `ollama serve` on port `20000 + jobid % 10000`, syncs new models back on exit. |
 | `ollama_node.sh` | Generic sbatch wrapper that just holds a GPU node with Ollama up (see `OLLAMA.md`). |
 | `summarize_overviews.py` | Reads `talent.db`, sends each company's facts to Ollama `/api/chat`, writes `overviews.md` and `overviews.json`. The prompt defines the score bands and explains that integrity penalty 0 means no red flags. |
@@ -54,10 +54,37 @@ Off-repo:
 | `/home2/nishanth.r/ollama_persist/` | `ollama-v0.40.12.tar.zst` plus `models/` (llama3.1:8b, llama3.2:3b). Home quota is 50 GB. |
 | `/scratch/nishanth.r/penny` on a compute node | venv, `data/talent.db`, caches. Per node, purged after about 7-10 days. |
 
+## 3a. Web search layer (SearXNG)
+
+Added 30 Oct 2026. The pipeline's only broad source of *people* used to be filings and the
+company's own site; 35 of 100 companies ended up with nobody named. Web search now fills that
+gap through a **private SearXNG instance** (https://github.com/searxng/searxng, cloned at
+`searxng/`, git-ignored) that each job starts on the node next to Ollama:
+
+| Piece | What it does |
+|---|---|
+| `searxng_env.sh` | Sourced by `penny_run.sh` (unless `PENNY_SEARCH=0`): rsyncs the clone to `/scratch/nishanth.r/searxng/src`, builds a venv from its `requirements.txt`, renders `searxng_settings.yml` (JSON API on, limiter off, port `30000 + jobid % 10000`, loopback only), starts `python -m searx.webapp`, waits for `/healthz`, runs one test query, exports `TALENT_SEARXNG_URL`. Its log is copied to `penny_results/<job>/searxng.log`. |
+| `searxng_settings.yml` | Instance settings; engines are SearXNG's defaults (DuckDuckGo, Brave, Startpage, Qwant, Mojeek, Wikipedia) plus Bing. Google stays off (CAPTCHAs from datacenter IPs). |
+| `src/talent/sources/websearch.py` | Provider chain `searxng` → `google` → `brave` (`websearch.providers` in `config/sources.yaml`). Query templates with `{name} {short} {ticker} {exchange} {domain} {person}`. Results are cached on disk like every other HTTP response (`websearch.cache_days`). Denylisted hosts (LinkedIn, Crunchbase, ...) are never fetched; their URLs are pointers only. |
+| enrich part `web` (`stages/enrich.py`) | Per company: (1) parse "Name - Title - Company" result titles into mentions; (2) run the LLM extractor over all titles+snippets as one short document; (3) fetch up to `max_pages` result pages that look like leadership pages or appointment news (polite client: robots, cache, denylist) and extract people from them (source kind `web_page`). |
+| `stages/filings.py` (India) | When the company site exposes fewer than two annual-report PDFs, `find_annual_report_pdfs` searches for them (`"<short name>" "annual report" filetype:pdf`) and feeds them to the same PDF extraction. |
+| `stages/profiles.py` (new stage, after `resolve`) | **Profile matching.** For each resolved person (most senior first, `max_people_for_profiles`), searches `"<person>" "<company>"`, scores each result 0-1 on name-in-title, company-in-snippet, profile host, current-title words, and stores the top links as `Person.profile_links`, adds a `profile_url` claim per strong match (≥ 0.75), bumps confidence, and upgrades `cannot_verify` to `probably_genuine` when two strong matches exist. Exported per person as `profiles` in `dashboard.json`. |
+| CLI | `talent search "query"` (ad-hoc query through the provider chain), `talent search-check` (health + sample people query + one profile match). `run-all` stages are now `fetch,enrich,resolve,profiles,score`; enrich parts `site,news,research,web`. |
+| Tests | `tests/test_websearch.py` (offline, SearXNG mocked) runs inside every pilot job. |
+
+Where search is used, in one line: **people** (who is at the company: snippets, pages, news),
+**documents** (annual reports the site hides), **profiles** (which public page is about this
+person at this company). Anything else that needs "look it up on the web" should go through
+`websearch.search()` so caching, provider fallback and the denylist apply.
+
+First pilot with this layer: job 48595 (ihub partition, account d4, tickers AXITA, GENNEX, IPDN, URJA).
+
 ## 4. How to run
 
-Submit from the login node. plafnet2 (gnode113-118) is out of GPU minutes until about
-1 Nov 2026 04:34 UTC, so use the plafnet account on partition u22:
+Submit from the login node. Accounts: `plafnet` (partition u22, 80-CPU group cap, often full), `plafnet2`
+(gnode113-118, GPU minutes exhausted until about 1 Nov 2026), and `d4` (partition **ihub**, 12 nodes,
+204 CPU / 17 GPU group cap, 4-day wall), which is what the SearXNG pilot used:
+`sbatch -A d4 -p ihub --qos=d4 --gres=gpu:1 -n 10 ...`. On plafnet:
 
 ```bash
 # full 100-company run (about 7.5 h on a 1080 Ti / 2080 Ti)

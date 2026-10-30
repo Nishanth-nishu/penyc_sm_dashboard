@@ -18,6 +18,7 @@
 #   PENNY_TICKERS="PDSB india:NHCFOODS" sbatch penny_run.sh
 #   PENNY_MODEL=llama3.1:8b PENNY_MODE=full sbatch penny_run.sh
 #   PENNY_NUM_CTX=32768 sbatch penny_run.sh                # on a 24 GB card
+#   PENNY_SEARCH=0 sbatch penny_run.sh                      # no SearXNG / web search (filings + site only)
 #   PENNY_MODE=rerun PENNY_TICKERS="BKYI india:A1L" PENNY_RESTORE_DB=penny_results/47396/talent.db \
 #       PENNY_OLLAMA_TIMEOUT=180 PENNY_CHUNK_CHARS=15000 sbatch penny_run.sh         # redo some companies on top of an earlier DB,
 #                                                            # then refresh export + overviews for everyone
@@ -42,6 +43,7 @@ export LD_LIBRARY_PATH=/software/apps/u22/python/3.12.15/lib${LD_LIBRARY_PATH:+:
 NUM_CTX=${PENNY_NUM_CTX:-16384}   # 32768 in the repo default; 16k keeps llama3.1:8b inside an 11 GB card
 OLLAMA_TIMEOUT=${PENNY_OLLAMA_TIMEOUT:-900}   # per-call cap; the 8B model sometimes loops on a chunk (15-25 min); normal calls take <40 s on a 1080 Ti, so 300 is safe
 CHUNK_CHARS=${PENNY_CHUNK_CHARS:-40000}   # chars per Ollama extraction call; 15000 for companies whose 40k chunks make the model loop
+SEARCH=${PENNY_SEARCH:-1}   # 1 = start a private SearXNG next to Ollama and use it for web search (0 = filings/site only)
 RESTORE_DB=${PENNY_RESTORE_DB:-}   # talent.db from a previous results dir; always copied over scratch when set (node scratch may hold an older run)
 
 echo "=========================================="
@@ -74,18 +76,33 @@ echo "venv python: $(.venv/bin/python --version)"
 
 # ── 3. Ollama from node scratch
 source /home2/nishanth.r/penyc_sm_dashboard/ollama_env.sh "$MODEL" || exit 1
-trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; ollama_sync_back' EXIT   # keep the server log: scratch dies with the job
+trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; cp "$SEARXNG_LOG" "$RESULTS/searxng.log" 2>/dev/null; searxng_stop 2>/dev/null; ollama_sync_back' EXIT   # keep the server logs: scratch dies with the job
 export TALENT_EXTRACTION_PROVIDER=ollama
 export TALENT_OLLAMA_URL="http://$OLLAMA_HOST"
 export TALENT_OLLAMA_MODEL="$MODEL"
 export PYTHONPATH="$PROJ/src"
 talent() { "$PROJ/.venv/bin/python" -m talent.cli "$@"; }
 
+# ── 3b. SearXNG (web search for people discovery, hidden documents, profile matching)
+if [ "$SEARCH" = 1 ]; then
+    source /home2/nishanth.r/penyc_sm_dashboard/searxng_env.sh || { echo "SearXNG failed to start; continuing without web search"; unset TALENT_SEARXNG_URL; }
+else
+    unset TALENT_SEARXNG_URL
+fi
+
 # ── 4. pipeline
 stage() { echo; echo "────────── $1  ($(date -u +%T) UTC)"; }
 
 stage "llm-check"
 talent llm-check || exit 1
+if [ -n "$TALENT_SEARXNG_URL" ]; then
+    stage "search-check"
+    talent search-check || echo "search-check failed; web search parts will be skipped where unavailable"
+fi
+if [ "$MODE" = "pilot" ]; then
+    stage "unit tests (offline)"
+    .venv/bin/python -m pytest -q tests/test_websearch.py 2>&1 | tail -5
+fi
 # Job 47116 (gnode033) ran the whole pipeline at CPU speed (31 tok/s vs 329 on a 1080 Ti) and every call hit the
 # timeout. Refuse to continue unless the model is fully on the GPU.
 grep -iE 'inference compute|library=|no compatible|unable to load' "$SCR/serve_${SLURM_JOB_ID}.log" | head -5
