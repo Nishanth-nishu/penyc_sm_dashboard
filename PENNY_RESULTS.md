@@ -135,7 +135,19 @@ low authority. Still empty: AGOL, CHANDRIMA, ESSENTIA, EXXARO, GROWINGTON, SIKKO
 name is a generic word the filter lets namesakes through (Bridge Securities → a Singapore "Capital Bridge Securities";
 Empower India → a US "Empower"); those land at confidence 0.4-0.55 as `named_staff`.
 
-`penny_results/49406/` is now the most complete export (100 scored, 93 with people); use its `talent.db` as
+**Job 49475 (gnode095, RTX 3080 Ti, 30 Oct 2026 18:55-19:09 UTC / 31 Oct 00:25-00:39 IST): no change, exit 0.**
+Same selection as 49406 with the LLM on, restored from 49406. Only 8 Ollama calls: the node still held job 48860's
+cached SearXNG answers (empty or Brave/DuckDuckGo-only, written by the old client), and the new client read them back as
+cache hits, forgot them, and moved on. No new people or pages. Lesson: a node's search cache outlives the job that wrote
+it; `PENNY_FRESH_SEARCH=1` now drops it at job start. Export kept for the record; the site stays on 49406.
+
+While checking 49475's DB, 115 of the pipeline's People turned out not to be people: roles ("CEO", "Non-Executive
+Directors"), companies ("Veggie Fest Foods Private Limited"), agencies ("FDA", "Nasdaq"), auditors ("S V R P & CO."),
+lone first names ("Priyanka"), plus a few real people from a web page about an unrelated company (Bill Damron at
+"A1 Limited"). The resolve stage now drops such mentions (`plausible_person_name`, and the relevance filter applied to
+the page a mention came from), so the next resolve over all companies cleans this up.
+
+`penny_results/49406/` is the most complete export so far (100 scored, 93 with people); use its `talent.db` as
 `PENNY_RESTORE_DB` for any further rerun. Its `overviews.*` are copied from 48860 (CPU jobs skip the overview step).
 
 ## Rerunning companies

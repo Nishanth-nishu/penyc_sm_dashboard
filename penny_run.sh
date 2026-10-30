@@ -133,6 +133,10 @@ if [ "$MODE" != "rerun" ]; then       # rerun keeps the universe already in the 
     talent universe show --limit 10
 fi
 
+# PENNY_FRESH_SEARCH=1 drops the node's cached SearXNG answers first (a previous job on the node may have
+# cached throttled/empty answers or junk engines; the client now forgets empty answers, but old ones remain).
+if [ "${PENNY_FRESH_SEARCH:-0}" = 1 ]; then rm -rf "$PROJ/data/raw/searxng" && echo "dropped cached SearXNG answers in $PROJ/data/raw/searxng"; fi
+
 # Optional stage / enrich-part selection, e.g. a search-only pass over companies already fetched:
 #   PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web
 SEL=(); [ -n "${PENNY_STAGES:-}" ] && SEL+=(--stage "$PENNY_STAGES"); [ -n "${PENNY_ENRICH_PARTS:-}" ] && SEL+=(--enrich-parts "$PENNY_ENRICH_PARTS")
