@@ -24,7 +24,7 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 | Companies with named people | 65 |
 | Still skipped | 8: A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV (model loops on their first chunk even at 15000 chars; needs a `num_predict` cap in the pipeline, see PENNY_RESULTS.md) |
 | Job in progress | none. Last: 47991 on gnode049 (30 Oct 08:09-09:04 UTC), recovered AMOD, JZ, ALEC |
-| Website | `docs/` is the GitHub Pages site. Pages on this repo must be enabled once (Settings > Pages: Deploy from a branch, `main`, `/docs`, or `POST /repos/Nishanth-nishu/penyc_sm_dashboard/pages`); it then serves https://nishanth-nishu.github.io/penyc_sm_dashboard/ and redeploys about a minute after each push. The earlier site under glycemico-pred is switched off. |
+| Website | `docs/` is a static site, deployed with **Vercel** (not GitHub Pages). `vercel.json` sets the output directory to `docs` with no build step, so importing this repo at https://vercel.com/new deploys it as-is and redeploys on every push to `main`. CLI alternative from any machine with Node: `npx vercel --prod` inside the checkout. |
 | Results note | `PENNY_RESULTS.md` (numbers, top 10, failure analysis, rerun history) |
 
 ## 3. Where things live
