@@ -1,0 +1,123 @@
+[
+ {
+  "company_id": "us:PDSB",
+  "ticker": "PDSB",
+  "name": "PDS Biotechnology Corporation",
+  "market": "us",
+  "talent_score": 9.6,
+  "coverage": 0.6,
+  "overview": "PDS Biotechnology Corporation is a clinical-stage biopharmaceutical company listed on the NasdaqCM exchange, with a market capitalization of $159.6 million and a headcount of 21 employees. The company is developing a pipeline of targeted cancer immunotherapies, including PDS0101, which is in phase II clinical trial for various cancers. The leadership team is led by Frank Bedu-Addo, Ph.D., who serves as President, Chief Executive Officer, and Principal Executive Officer. The team has a talent score of 9.6 out of 100, indicating a strong team, but the coverage score is only 0.6 out of 1, suggesting limited analyst attention. There are some red flags, including a going concern warning and a reverse merger, which may raise concerns about the company's financial stability.",
+  "facts": {
+   "name": "PDS Biotechnology Corporation",
+   "ticker": "PDSB",
+   "market": "us",
+   "exchange": "NasdaqCM",
+   "sector": "biotech",
+   "industry": "Biotechnology",
+   "description": "PDS Biotechnology Corporation, a clinical-stage biopharmaceutical company, developing a pipeline of targeted cancer immunotherapies in the United States. The company's lead product candidate is PDS0101, a Versamune HPV, which is in phase II clinical trial for the treatment of head and neck, cervical, anal, vaginal, vulvar, and penile cancers. It also develops various product candidates, which are in preclinical trials, including PDS0102, an investigational immunotherapy utilizing tumor-associated and immunologically active T cell receptor gamma alternate reading framed protein for treating acute myeloid leukemia, prostate, and breast cancer; and PDS0103 for ovarian, breast, colorectal, and lung cancers. In addition, the company is developing PDS01ADC, a novel investigational Interleukin 12 fused antibody-drug conjugate, tumor-targeting interleukin 12 immune-cytokine that enhances the proliferation, potency, and longevity of T cells in the tumor microenvironment. It has a license and collaboration agreements with National Institutes of Health, Merck Eprova AG, The U.S. Department of Health and Human Services, Georgia Research Foundation, and MSD International GmbH. PDS Biotechnology",
+   "website": "https://www.pdsbiotech.com",
+   "price": 1.52,
+   "currency": "USD",
+   "market_cap": 159608256.0,
+   "headcount": 21,
+   "headcount_as_of": "2025-12-31",
+   "talent_score_0_100": 9.6,
+   "coverage_0_1": 0.6,
+   "score_components": {
+    "leadership": 9.7,
+    "technical_bench": 0.0,
+    "momentum": 35.0,
+    "density": 100.0,
+    "integrity": 60.0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-08-13",
+    "last_annual_report_date": "2026-03-30",
+    "going_concern": true,
+    "reverse_merger": true,
+    "evidence": [
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1472091/000114036125041976/ef20054966_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1472091/000114036125030825/ef20050390_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1472091/000114036123054768/ef20015466_8k.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "reverse merger"
+     }
+    ]
+   },
+   "leadership": [
+    "Frank Bedu-Addo, Ph.D. (President, Chief Executive Officer, Principal Executive Officer and Director)",
+    "Gregory L. Conn (Chief Scientific Officer)",
+    "Kirk V. Shepard (Chief Medical Officer)",
+    "Lars Boesgaard (Chief Financial Officer)",
+    "Patrick Soon-Shiong (Executive Chairman of the Board)",
+    "Stephan Toutain (Chief Operating Officer)",
+    "Bruce Wendel (director)",
+    "Deborah A. Ramsdell (director)"
+   ],
+   "named_people_total": 26
+  }
+ },
+ {
+  "company_id": "india:NHCFOODS",
+  "ticker": "NHCFOODS",
+  "name": "NHC Foods Limited",
+  "market": "india",
+  "talent_score": 20.2,
+  "coverage": 0.32,
+  "overview": "NHC Foods Limited is a consumer goods company listed on the BSE exchange in India. The company, which was founded in 1960, has a market capitalization of 1.26 billion INR and a headcount of 34 employees. It engages in the provision of various food products, including spices, oil seeds, and grains, under its Indibite and SAAZ brand names. The company is led by Apoorva Shah, Satyam Joshi, and other directors, but its leadership and technical bench talent scores are not strong, with a talent score of 20.2 out of 100. The company's last annual report was filed on March 31, 2026, but there are no other red flags mentioned.",
+  "facts": {
+   "name": "NHC Foods Limited",
+   "ticker": "NHCFOODS",
+   "market": "india",
+   "exchange": "BSE",
+   "sector": "consumer",
+   "industry": "Packaged Foods",
+   "description": "NHC Foods Limited engages in the provision of whole and ground spices products in India and internationally. The company offers spices, oil seeds, rice, dry fruits, cereal and grains, dehydrated products, chickpeas, herbs, coffee, sugar, and other foodstuffs, as well as lentils, pulses, grains, agri-products and assorted food products. It offers its products under the Indibite and SAAZ brand names. The company also exports its products. The company was formerly known as NHC Industries Pvt. Ltd. NHC Foods Limited was founded in 1960 and is based in Mumbai, India.",
+   "website": "https://www.nhcgroup.com",
+   "price": 1.34,
+   "currency": "INR",
+   "market_cap": 1264700160.0,
+   "headcount": 34,
+   "headcount_as_of": "2026-03-31",
+   "talent_score_0_100": 20.2,
+   "coverage_0_1": 0.32,
+   "score_components": {
+    "leadership": 10.0,
+    "technical_bench": 0.0,
+    "momentum": 45.0,
+    "density": 100.0,
+    "integrity": 0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-03-31",
+    "last_annual_report_date": "2026-03-31"
+   },
+   "leadership": [
+    "Apoorva Shah (Managing Director)",
+    "Ashish Ashokkumar Shah (Executive Director)",
+    "Satyam Joshi (Managing Director)",
+    "Anisha Sharma (Non-Executive - Independent Director)",
+    "Karan Nagdev (Non-Executive - Independent Director)",
+    "Manish Vyas (Non-Executive - Independent Director)",
+    "Monika Amit Singhania (Independent Director)",
+    "Narayanan Iyer (Non-Executive - Independent Director)"
+   ],
+   "named_people_total": 15
+  }
+ }
+]

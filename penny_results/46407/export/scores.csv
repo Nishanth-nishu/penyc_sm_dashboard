@@ -1,0 +1,101 @@
+rank,market,ticker,name,exchange,sector,price,currency,mcap,score,coverage,leadership,technical_bench,momentum,density,integrity_penalty,headcount,named_people,going_concern,shell,reverse_merger,website
+1,india,NHCFOODS,NHC Foods Limited,BSE,Consumer Defensive,1.34,INR,1264700160.0,20.2,0.34,10.0,0.0,45.0,100.0,0.0,31,15,,,,https://www.nhcgroup.com
+2,us,PDSB,PDS Biotechnology Corporation,NasdaqCM,Healthcare,1.52,USD,159608256.0,9.6,0.6,9.7,0.0,35.0,100.0,60.0,21,26,True,,True,https://www.pdsbiotech.com
+3,india,A1L,A-1 Limited,BSE,Basic Materials,5.19,INR,2387399936.0,,0.0,,,,,,14,0,,,,https://www.a-1limited.com
+4,india,AFIL,Akme Fintrade (India) Limited,NSE,Financial Services,7.39,INR,3153682176.0,,0.0,,,,,,348,0,,,,https://www.akmefintrade.com
+5,india,AGOL,Ashapuri Gold Ornament Limited,NSE,Consumer Cyclical,5.49,INR,1829897344.0,,0.0,,,,,,82,0,,,,https://ashapurigold.com
+6,india,ASHNI,Ashnisha Industries Limited,BSE,Basic Materials,2.31,INR,612438720.0,,0.0,,,,,,2,0,,,,https://www.ashnisha.in
+7,india,AVANCE,Avance Technologies Limited,NSE,Technology,0.56,INR,1109873792.0,,0.0,,,,,,3,0,,,,https://www.avance.in
+8,india,AVROIND,Avro India Limited,NSE,Consumer Cyclical,5.8,INR,778194176.0,,0.0,,,,,,77,0,,,,https://www.avrofurniture.com
+9,india,AXITA,Axita Cotton Limited,NSE,Consumer Cyclical,7.2,INR,2755249408.0,,0.0,,,,,,22,0,,,,https://axitacotton.com
+10,india,BPAGRI,Blue Pearl Agriventures Limited,BSE,Consumer Cyclical,6.64,INR,4000998400.0,,0.0,,,,,,,0,,,,https://www.bluepearlagriventures.in
+11,india,BRIDGESE,Bridge Securities Limited,BSE,Consumer Defensive,5.84,INR,227035840.0,,0.0,,,,,,,0,,,,https://bridgesecurities.in
+12,india,BTML,Bodhi Tree Multimedia Limited,NSE,Communication Services,5.99,INR,1088369664.0,,0.0,,,,,,10,0,,,,https://www.bodhitreemultimedia.com
+13,india,CCDL,Consecutive Commodities Limited,BSE,Financial Services,1.04,INR,666224000.0,,0.0,,,,,,,0,,,,https://www.consecutivecommodities.com
+14,india,CHANDRIMA,Chandrima Mercantiles Limited,BSE,Consumer Defensive,5.96,INR,1985690240.0,,0.0,,,,,,,0,,,,https://www.chandrimamercantiles.co.in
+15,india,CHLOGIST,Chartered Logistics Limited,BSE,Industrials,7.8,INR,991692032.0,,0.0,,,,,,51,0,,,,https://www.chartered.co.in
+16,india,COMFINTE,Comfort Intech Limited,NSE,Industrials,7.12,INR,2277959168.0,,0.0,,,,,,12,0,,,,https://www.comfortintech.com
+17,india,CROPSTER,Cropster Agro Limited,BSE,Consumer Defensive,1.48,INR,1243200000.0,,0.0,,,,,,,0,,,,https://www.planterspolysacks.com
+18,india,DAVANGERE,Davangere Sugar Company Limited,NSE,Consumer Defensive,2.01,INR,2874281472.0,,0.0,,,,,,382,0,,,,https://davangeresugar.com
+19,india,DISHTV,Dish TV India Limited,NSE,Communication Services,2.07,INR,3811400192.0,,0.0,,,,,,293,0,,,,https://www.dishd2h.com
+20,india,DUCON,Ducon Infratechnologies Limited,NSE,Industrials,1.3,INR,747328832.0,,0.0,,,,,,50,0,,,,https://duconinfra.co.in
+21,india,EMPOWER,Empower India Limited,NSE,Technology,1.17,INR,1361644288.0,,0.0,,,,,,5,0,,,,https://www.empowerindia.in
+22,india,ESSENTIA,Integra Essentia Limited,NSE,Consumer Defensive,0.92,INR,1614860544.0,,0.0,,,,,,10,0,,,,https://www.integraessentia.com
+23,india,EVEXIA,Evexia Lifecare Limited,BSE,Healthcare,1.5,INR,2815993600.0,,0.0,,,,,,9,0,,,,https://www.evexialifecare.com
+24,india,EXXARO,Exxaro Tiles Limited,NSE,Industrials,6.16,INR,2756049664.0,,0.0,,,,,,506,0,,,,https://www.exxarotiles.com
+25,india,GANGAFORGE,Ganga Forging Limited,NSE,Industrials,1.4,INR,471807776.0,,0.0,,,,,,55,0,,,,https://www.gangaforging.com
+26,india,GATECH,GACM Technologies Limited,NSE,Financial Services,0.52,INR,929452224.0,,0.0,,,,,,17,0,,,,https://gacmtech.com
+27,india,GENNEX,Gennex Laboratories Limited,BSE,Healthcare,8.96,INR,2176811264.0,,0.0,,,,,,125,0,,,,https://www.gennexlab.com
+28,india,GROWINGTON,Growington Ventures India Limited,BSE,Consumer Defensive,0.51,INR,327530016.0,,0.0,,,,,,,0,,,,https://www.growington.in
+29,india,GUJCOTEX,Gujarat Cotex Limited,BSE,Consumer Cyclical,2.48,INR,235434432.0,,0.0,,,,,,5,0,,,,https://gujcotex.co
+30,india,IVC,IL&FS Investment Managers Limited,NSE,Financial Services,7.54,INR,2367806720.0,,0.0,,,,,,12,0,,,,https://www.iimlindia.com
+31,india,KALIND,Kalind Limited,BSE,Financial Services,3.26,INR,2980210432.0,,0.0,,,,,,140,0,,,,https://www.kalindlimited.com/home
+32,india,KAPILRAJ,Kapil Raj Finance Limited,BSE,Financial Services,4.34,INR,474796032.0,,0.0,,,,,,2,0,,,,https://www.kapilrajfinanceltd.com
+33,india,KSHITIJPOL,Kshitij Polyline Limited,NSE,Industrials,3.15,INR,485871392.0,,0.0,,,,,,92,0,,,,https://www.kshitijpolyline.co.in
+34,india,LANDSMILL,Landsmill Green Limited,NSE,Industrials,0.72,INR,1015700480.0,,0.0,,,,,,6,0,,,,https://www.excel-infoways.com
+35,india,MISHTANN,Mishtann Foods Limited,BSE,Consumer Defensive,2.91,INR,3135853824.0,,0.0,,,,,,,0,,,,https://www.mishtann.com
+36,india,NDL,Nandan Denim Limited,NSE,Consumer Cyclical,2.5,INR,3603679232.0,,0.0,,,,,,1726,0,,,,https://nandandenim.com
+37,india,OMEGAIN,Omega Interactive Technologies Limited,BSE,Technology,9.91,INR,826413568.0,,0.0,,,,,,,0,,,,https://omegainteractive.in
+38,india,PVVINFRA,PVV Infra Limited,BSE,Basic Materials,1.85,INR,395479328.0,,0.0,,,,,,,0,,,,https://www.pvvinfra.com
+39,india,RGF,RGF Capital Markets Limited,BSE,Financial Services,3.53,INR,529584704.0,,0.0,,,,,,,0,,,,https://www.rgfcapitalmarkets.com
+40,india,SARVESHWAR,Sarveshwar Foods Limited,NSE,Consumer Defensive,3.54,INR,4359957504.0,,0.0,,,,,,32,0,,,,https://sarveshwarfoods.com
+41,india,SHAH,Shah Metacorp Limited,NSE,Basic Materials,2.75,INR,2822529024.0,,0.0,,,,,,73,0,,,,https://www.shahmetacorp.com
+42,india,SIKKO,Sikko Industries Limited,NSE,Basic Materials,4.99,INR,2179631872.0,,0.0,,,,,,112,0,,,,https://sikkoindia.in
+43,india,STARLENT,StarlinePS Enterprises Limited,BSE,Consumer Cyclical,7.35,INR,3167597824.0,,0.0,,,,,,5,0,,,,https://www.starlineps.com
+44,india,TITANIN,Titan Intech Limited,BSE,Technology,0.84,INR,741364544.0,,0.0,,,,,,95,0,,,,https://www.titanintech.in
+45,india,TUNITEX,Tuni Textile Mills Limited,BSE,Consumer Cyclical,2.05,INR,1229611136.0,,0.0,,,,,,48,0,,,,https://www.tunitextiles.com
+46,india,ULTRACAB,Ultracab (India) Limited,BSE,Industrials,7.27,INR,893904320.0,,0.0,,,,,,146,0,,,,https://www.ultracabwires.com
+47,india,URJA,Urja Global Limited,NSE,Technology,8.27,INR,4608094208.0,,0.0,,,,,,45,0,,,,https://urjaglobal.in
+48,india,VISHWARAJ,Vishwaraj Sugar Industries Limited,NSE,Consumer Defensive,4.86,INR,1058642624.0,,0.0,,,,,,944,0,,,,https://vsil.co.in
+49,india,VSL,Viram Suvarn Limited,BSE,Consumer Cyclical,9.33,INR,1058593728.0,,0.0,,,,,,2,0,,,,https://www.viramsuvarnlimited.com
+50,india,WORTH,Worth Investment & Trading Company Limited,BSE,Financial Services,2.59,INR,960156992.0,,0.0,,,,,,,0,,,,https://www.worthinvt.com
+51,india,ZEEMEDIA,Zee Media Corporation Limited,NSE,Communication Services,7.04,INR,4614217728.0,,0.0,,,,,,1568,0,,,,https://www.zeemedia.in
+52,us,AIXI,Xiao-I Corporation,NasdaqGM,Technology,2.96,USD,1673024.0,,0.0,,,,,,58,0,,,,https://www.xiaoi.com
+53,us,ALEC,"Alector, Inc.",NasdaqGS,Healthcare,2.25,USD,251228064.0,,0.0,,,,,,103,0,,,,https://www.alector.com
+54,us,AMIX,"Autonomix Medical, Inc.",NasdaqCM,Healthcare,2.15,USD,4213867.0,,0.0,,,,,,,0,,,,https://autonomix.com
+55,us,AMOD,"Alpha Modus Holdings, Inc.",NasdaqCM,Technology,1.12,USD,64417680.0,,0.0,,,,,,9,0,,,,https://alphamodus.com
+56,us,APUS,"Apimeds Pharmaceuticals US, Inc.",NYSE American,Healthcare,3.07,USD,4632992.0,,0.0,,,,,,,0,,,,https://www.mindwavedao.com
+57,us,BENF,Beneficient,NasdaqCM,Financial Services,0.825,USD,12778211.0,,0.0,,,,,,50,0,,,,https://www.trustben.com
+58,us,BIAF,"bioAffinity Technologies, Inc.",NasdaqCM,Healthcare,3.14,USD,4029154.0,,0.0,,,,,,57,0,,,,https://bioaffinitytech.com
+59,us,BKYI,"BIO-key International, Inc.",NasdaqCM,Industrials,3.14,USD,6390368.0,,0.0,,,,,,41,0,,,,https://www.bio-key.com
+60,us,BTCT,BTC Digital Ltd.,NasdaqCM,Technology,0.7367,USD,8693478.0,,0.0,,,,,,26,0,,,,https://btct.investorroom.com
+61,us,CABA,"Cabaletta Bio, Inc.",NasdaqGS,Healthcare,1.52,USD,257709072.0,,0.0,,,,,,154,0,,,,https://www.cabalettabio.com
+62,us,CHOW,ChowChow Cloud International Holdings Limited,NYSE American,Technology,2.11,USD,7488389.0,,0.0,,,,,,17,0,,,,https://www.serenoclouds.com
+63,us,CWH,"Camping World Holdings, Inc.",NYSE,Consumer Cyclical,4.58,USD,292332000.0,,0.0,,,,,,11144,0,,,,https://www.campingworld.com
+64,us,CYCU,"Cycurion, Inc.",NasdaqGM,Technology,2.49,USD,8042804.0,,0.0,,,,,,66,0,,,,https://cycurion.com
+65,us,DAIC,"CID HoldCo, Inc.",NasdaqGM,Technology,1.06,USD,2725588.0,,0.0,,,,,,,0,,,,https://www.envoythere.com
+66,us,DAVI,Davion Healthcare Plc,NasdaqGM,Healthcare,3.29,USD,82250000.0,,0.0,,,,,,,0,,,,https://www.davionhealthcare.com
+67,us,DFDV,DeFi Development Corp.,NasdaqCM,Financial Services,3.99,USD,130156952.0,,0.0,,,,,,16,0,,,,https://defidevcorp.com
+68,us,DGXX,Digi Power X Inc.,NasdaqCM,Utilities,2.48,USD,251463792.0,,0.0,,,,,,17,0,,,,https://www.digipowerx.com
+69,us,ENGS,Energys Group Limited,NasdaqCM,Industrials,4.36,USD,194135696.0,,0.0,,,,,,38,0,,,,https://www.energysgroup.com
+70,us,FCUV,Focus Universal Inc.,NasdaqCM,Technology,3.5,USD,3437042.0,,0.0,,,,,,37,0,,,,https://www.focusuniversal.com
+71,us,FLYE,"Fly-E Group, Inc.",NasdaqCM,Consumer Cyclical,1.83,USD,2987266.0,,0.0,,,,,,55,0,,,,https://www.flyebike.com
+72,us,FTFT,Future FinTech Group Inc.,NasdaqCM,Technology,2.89,USD,23343952.0,,0.0,,,,,,30,0,,,,https://www.ftft.com
+73,us,GLND,Greenland Energy Company,NasdaqGM,Energy,3.24,USD,141685824.0,,0.0,,,,,,,0,,,,https://greenlandenergyco.com
+74,us,GPRO,"GoPro, Inc.",NasdaqGS,Technology,1.03,USD,190039536.0,,0.0,,,,,,636,0,,,,https://www.gopro.com
+75,us,HOWL,"Werewolf Therapeutics, Inc.",NasdaqCM,Healthcare,1.06,USD,51517576.0,,0.0,,,,,,39,0,,,,https://werewolftx.com
+76,us,IPDN,"Professional Diversity Network, Inc.",NasdaqCM,Industrials,1.97,USD,1311647.0,,0.0,,,,,,30,0,,,,https://www.ipdn.com
+77,us,IPST,"IP Strategy Holdings, Inc.",NasdaqCM,Financial Services,2.58,USD,1861671.0,,0.0,,,,,,20,0,,,,https://ir.ipstrategy.co
+78,us,JZ,Jianzhi Education Technology Group Company Limited,NasdaqCM,Technology,0.995,USD,2396271.0,,0.0,,,,,,42,0,,,,https://www.jianzhi-jiaoyu.com
+79,us,MEDS,"DataMEDS AI, Inc.",NasdaqCM,Healthcare,2.2,USD,11401564.0,,0.0,,,,,,,0,,,,https://datamedsai.com
+80,us,MSGY,Masonglory Limited,NasdaqCM,Industrials,4.06,USD,8605677.0,,0.0,,,,,,11,0,,,,https://www.masontech.com.hk
+81,us,NCPL,Netcapital Inc.,NasdaqCM,Financial Services,1.1,USD,8820271.0,,0.0,,,,,,23,0,,,,https://www.netcapitalinc.com
+82,us,OLB,"The OLB Group, Inc.",NasdaqCM,Technology,0.2794,USD,6711275.0,,0.0,,,,,,13,0,,,,https://www.olb.com
+83,us,QTEX,QTREX Quantum Ltd.,NasdaqCM,Technology,1.37,USD,91892808.0,,0.0,,,,,,34,0,,,,https://q-trex.com
+84,us,SDEV,Stablecoin Development Corporat,NYSE American,Financial Services,1.08,USD,78966384.0,,0.0,,,,,,2,0,,,,https://stabledev.com
+85,us,SERV,Serve Robotics Inc.,NasdaqCM,Industrials,3.02,USD,261856656.0,,0.0,,,,,,370,0,,,,https://www.serverobotics.com
+86,us,SION,"Sionna Therapeutics, Inc.",NasdaqGM,Healthcare,4.04,USD,182407328.0,,0.0,,,,,,59,0,,,,https://www.sionnatx.com
+87,us,SLNH,"Soluna Holdings, Inc.",NasdaqCM,Financial Services,0.7205,USD,176227504.0,,0.0,,,,,,51,0,,,,https://www.solunacomputing.com
+88,us,SOAR,"SOAR AI, Inc.",NYSE American,Technology,0.2358,USD,12646720.0,,0.0,,,,,,13,0,,,,https://soarai.com
+89,us,TCRT,"Alaunos Therapeutics, Inc.",NasdaqCM,Healthcare,2.13,USD,7328627.0,,0.0,,,,,,1,0,,,,https://www.alaunos.com
+90,us,TENX,"Tenax Therapeutics, Inc.",NasdaqCM,Healthcare,1.88,USD,70356960.0,,0.0,,,,,,14,0,,,,https://www.tenaxthera.com
+91,us,TNON,"Tenon Medical, Inc.",NasdaqCM,Healthcare,2.26,USD,6076541.0,,0.0,,,,,,26,0,,,,https://www.tenonmed.com
+92,us,VSEE,"VSee Health, Inc.",OTC Markets OTCPK,Healthcare,1.92,USD,1547669.0,,0.0,,,,,,209,0,,,,https://www.vseehealth.com
+93,us,VSEED,"VSee Health, Inc.",OTC Markets OTCPK,Healthcare,1.92,USD,1547669.0,,0.0,,,,,,209,0,,,,https://www.vseehealth.com
+94,us,WORX,SCWorx Corp.,NasdaqCM,Healthcare,1.91,USD,2649359.0,,0.0,,,,,,9,0,,,,https://www.scworx.com
+95,us,XHG,XChange TEC.INC,NasdaqCM,Financial Services,3.89,USD,200521440.0,,0.0,,,,,,30,0,,,,https://www.xhghk.com
+96,us,XHLD,"TEN Holdings, Inc.",NasdaqCM,Communication Services,0.97,USD,11620545.0,,0.0,,,,,,25,0,,,,https://www.tenholdingsinc.com
+97,us,XLAB,Exascale Labs Holdings Inc.,NasdaqGM,Technology,3.17,USD,203941280.0,,0.0,,,,,,,0,,,,https://www.exascalelabs.ai
+98,us,XOS,"Xos, Inc.",NasdaqCM,Industrials,2.71,USD,38530380.0,,0.0,,,,,,99,0,,,,https://www.xostrucks.com
+99,us,XPON,"Expion Energy, Inc.",NasdaqCM,Industrials,3.85,USD,3898117.0,,0.0,,,,,,22,0,,,,https://expion360.com
+100,us,YMAT,"J-Star Holding Co., Ltd.",NasdaqCM,Basic Materials,2.2,USD,8822227.0,,0.0,,,,,,65,0,,,,https://j-starholding.com
