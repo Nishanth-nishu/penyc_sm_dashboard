@@ -1,6 +1,6 @@
 # Penny-stocks talent pipeline on Ada: handover
 
-Last updated 2026-10-30 12:40 UTC (18:10 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
+Last updated 2026-10-30 13:30 UTC (19:00 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
 human or Claude session. Everything here lives in this repo (`penyc_sm_dashboard`, folder
 checked out at `/home2/nishanth.r/penyc_sm_dashboard` on the Ada login node) except the private
 pipeline repo and the job outputs that are too big for git.
@@ -77,7 +77,18 @@ Where search is used, in one line: **people** (who is at the company: snippets, 
 person at this company). Anything else that needs "look it up on the web" should go through
 `websearch.search()` so caching, provider fallback and the denylist apply.
 
-First pilot with this layer: job 48595 (ihub partition, account d4, tickers AXITA, GENNEX, IPDN, URJA).
+Validation so far (30 Oct 2026, CPU-only jobs with `PENNY_LLM=0`, ihub partition, account d4):
+
+| Job | Result |
+|---|---|
+| 48600 | SearXNG up on the node (48 results from Bing/Brave/DuckDuckGo), search-check ok, 6/6 tests, 4 companies, 0 errors, 10 pages fetched, 14 profile claims. Title parser let company names through ("Key Management", "Our Leadership"). |
+| 48659 | Stricter parser, but 0 search people: the cache was keyed on the per-job SearXNG port, so every query re-ran against engines already throttling the node (DuckDuckGo timeouts, Google 429). |
+| 48683 | Cache keyed by query, 1 query / 2 s: 13 people from search for AXITA (1), GENNEX (6), IPDN (9), e.g. Kushal Patel (MD, Axita), Arihant Baid (MD, Gennex), Jodi Shamblott (IPDN); 11 `web_page` docs; 15 profile claims; 6/6 tests. |
+
+Known limits: snippet people include some past or peripheral staff (a CFO now at another company whose profile still
+mentions Gennex); they land as low-authority `named_staff` mentions and the extractor/profile stages decide what sticks.
+DuckDuckGo times out from the cluster; Bing and Brave carry most answers. The full pilot with the LLM over snippets and
+pages (job 48598, GPU) is queued until an ihub GPU frees up.
 
 ## 4. How to run
 
