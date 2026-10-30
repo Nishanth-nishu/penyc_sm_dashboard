@@ -31,9 +31,9 @@ Vercel redeploys the site about a minute after the push.
 | | |
 |---|---|
 | Companies processed | 100 (50 India, 50 US) |
-| Companies with at least one named person | 50 (76 after reruns) |
-| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 24 after reruns, all India |
-| Score band | 98 "weak" (< 25) and 2 "middling" (25-50) after reruns: Tenax Therapeutics 30.3, GACM Technologies 25.7 |
+| Companies with at least one named person | 50 (93 after reruns and the web-search pass) |
+| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 7 after reruns and web search: AGOL, CHANDRIMA, ESSENTIA, EXXARO, GROWINGTON, SIKKO, WORTH |
+| Score band | 98 "weak" (< 25) and 2 "middling" (25-50) after reruns: Tenax Therapeutics 30.3, GACM Technologies 25.9 |
 | Going-concern flags | 24 (35 after reruns) |
 | Reverse-merger flags | 9 (12 after reruns) |
 | Per-company failures | 23 (0 after reruns, see below) |
@@ -43,7 +43,7 @@ Top 10 by talent score:
 | Market | Ticker | Name | Score | Coverage | People |
 |---|---|---|---|---|---|
 | us | TENX | Tenax Therapeutics (added by rerun 48860) | 30.3 | 0.70 | 17 |
-| india | GATECH | GACM Technologies (added by rerun 48860) | 25.7 | 0.60 | 17 |
+| india | GATECH | GACM Technologies (added by rerun 48860) | 25.9 | 0.60 | 17 |
 | india | URJA | Urja Global | 23.2 | 0.60 | 33 |
 | india | IVC | IL&FS Investment Managers | 21.6 | 0.52 | 10 |
 | india | AVROIND | Avro India | 21.5 | 0.21 | 13 |
@@ -120,12 +120,23 @@ the job ran the pre-filter client, so its SearXNG instance was restarted mid-run
 management text: AGOL, AVANCE, AXITA, BRIDGESE, BTML, CHANDRIMA, COMFINTE, DAVANGERE, EMPOWER, ESSENTIA, EXXARO,
 GANGAFORGE, GENNEX, GROWINGTON, KSHITIJPOL, MISHTANN, NDL, OMEGAIN, SHAH, SIKKO, TITANIN, ULTRACAB, WORTH, ZEEMEDIA.
 
-**Job 49406 (ihub CPU, started 30 Oct 2026 18:06 UTC / 23:36 IST):** search-only pass over the same 35
-(`PENNY_LLM=0 PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web`, DB restored from 48860) with the
-fixed client and engine set: snippet people for the 24 and profile matching for everyone's people. Results pending.
+**Job 49406 (gnode103, CPU only, 30 Oct 2026 18:06-18:53 UTC / 23:36-00:23 IST): 24 of 35 gained people, exit 0.**
+Search-only pass (`PENNY_LLM=0 PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web`, DB restored from
+48860) with the fixed client (`relevant()` filter, no caching of empty answers) and the new engine set. Yahoo and Brave
+answered, DuckDuckGo timed out or CAPTCHA'd (137 engine errors in `searxng.log`); the filter dropped unrelated results
+79 times (e.g. 14 of 38 for Akme Fintrade). 17 of the 24 companies that had nobody now have named people from search
+snippets, among them Kushal Patel (MD, Axita Cotton), Arihant Baid (MD, Gennex), Hiralal Tilva (CMD, Ganga Forging),
+Mahendra Jain (Chairman, Kshitij Polyline), Anmol Sinha (ED, Titan Intech), Dinesh Garg (CFO, Zee Media), Abhijith
+Shamanur (ED, Davangere Sugar), Srikrishna Bhamidipati (Chairperson, Avance). Profile matching recorded 236 `profile_url`
+claims on 137 people (87 people carry profile links in the export), including for companies whose people came from
+filings (DISHTV 29, AFIL 21, GATECH 20, DFDV 19, IPDN 17). **93 of 100 companies now have named people**; scores moved
+only slightly (AVANCE and EMPOWER 7.5 → 17.5, COMFINTE 15.8, GANGAFORGE 11.7, BTML 10.8) because snippet people carry
+low authority. Still empty: AGOL, CHANDRIMA, ESSENTIA, EXXARO, GROWINGTON, SIKKO, WORTH. Known noise: when the company
+name is a generic word the filter lets namesakes through (Bridge Securities → a Singapore "Capital Bridge Securities";
+Empower India → a US "Empower"); those land at confidence 0.4-0.55 as `named_staff`.
 
-`penny_results/48860/` is now the most complete export (100 scored); use its `talent.db` (or 49406's once it lands) as
-`PENNY_RESTORE_DB` for any further rerun.
+`penny_results/49406/` is now the most complete export (100 scored, 93 with people); use its `talent.db` as
+`PENNY_RESTORE_DB` for any further rerun. Its `overviews.*` are copied from 48860 (CPU jobs skip the overview step).
 
 ## Rerunning companies
 

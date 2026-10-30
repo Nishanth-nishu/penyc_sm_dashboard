@@ -1,0 +1,455 @@
+2026-10-30 23:42:31,236 ERROR:searx: Error while getting the version: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2026-10-30 23:42:31,239 ERROR:searx: Error while getting the git URL & branch: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2026-10-30 23:42:31,557 ERROR:searx.engines: (PID 1819946) ahmia: can't register engine (loading engine failed)
+2026-10-30 23:42:31,839 ERROR:searx.engines: (PID 1819946) torch: can't register engine (loading engine failed)
+2026-10-30 23:42:31,947 WARNING:searx.botdetection.config: missing config file: /scratch/nishanth.r/searxng/limiter.toml
+ * Serving Flask app 'webapp'
+ * Debug mode: off
+2026-10-30 23:42:32,700 ERROR:searx.botdetection: X-Forwarded-For nor X-Real-IP header is set!
+2026-10-30 23:42:44,721 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:42:44,736 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:42:44,773 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:42:47,144 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Urja+Global%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-30 23:42:47,145 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-30 23:43:03,413 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:43:03,418 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:43:03,422 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:43:15,421 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:43:15,436 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:43:15,437 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:43:27,427 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:43:27,432 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:43:27,434 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:43:58,453 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:43:58,466 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:43:58,469 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:44:10,463 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:44:10,469 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:44:10,474 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:44:22,474 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:44:22,482 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:44:22,484 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:44:39,605 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:44:39,611 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:44:39,614 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:44:59,854 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:44:59,861 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:44:59,865 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:45:11,866 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:45:11,873 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:45:11,876 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:45:29,383 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:45:29,388 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:45:29,393 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:45:41,392 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:45:41,398 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:45:41,401 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:46:32,279 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:46:32,286 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:46:32,288 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:46:35,248 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Kamlesh+Jain%22+%22Akme+Fintrade+%28India%29%22&source=web
+2026-10-30 23:46:35,249 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-30 23:46:50,602 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:46:50,610 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:46:50,611 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:47:08,328 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:47:08,332 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:47:08,334 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:47:26,206 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:47:26,216 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:47:26,217 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:47:38,214 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:47:38,231 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:47:38,233 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:47:50,223 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:47:50,239 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:47:50,242 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:48:02,235 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:48:02,244 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:48:02,246 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:48:20,858 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:48:20,863 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:48:20,864 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:48:44,438 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:48:44,444 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:48:44,452 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:48:56,449 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:48:56,454 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:48:56,457 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:49:14,515 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:49:14,520 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:49:14,522 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:49:33,726 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:49:33,730 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:49:33,733 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:49:50,913 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:49:50,919 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:49:50,924 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:50:02,922 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:50:02,928 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:50:02,932 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:50:22,537 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:50:22,543 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:50:22,545 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:50:22,845 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Myriam+Ouattara%2C+MSc.%2C+CFA%22+%22Bridge+Securities%22&source=web
+2026-10-30 23:50:22,847 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-30 23:50:40,343 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:50:40,350 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:50:40,353 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:50:58,412 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:50:58,417 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:50:58,421 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:51:16,100 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:51:16,116 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:51:16,118 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:51:28,110 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:51:28,122 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:51:28,125 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:51:46,901 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:51:46,908 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:51:46,913 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:51:58,913 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:51:58,927 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:51:58,932 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:52:10,924 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:52:10,936 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:52:10,938 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:52:22,933 ERROR:searx.engines.wikidata: engine timeout
+2026-10-30 23:52:22,933 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:52:22,938 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:52:22,941 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-30 23:52:22,944 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:52:22,947 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:52:34,944 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:52:34,949 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:52:34,955 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:52:46,952 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:52:46,958 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:52:46,960 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:53:05,982 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:53:05,999 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:53:06,001 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:53:17,991 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:53:18,024 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:53:18,025 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:53:30,000 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:53:30,200 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:53:30,201 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, None)) False
+2026-10-30 23:53:30,474 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Davangere+Sugar%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-30 23:53:30,476 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-30 23:53:42,015 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:53:42,034 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:53:42,035 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:53:54,026 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:53:54,043 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:53:54,044 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:54:06,036 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:54:06,051 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:54:06,053 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:54:18,046 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:54:18,053 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:54:18,056 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:54:35,509 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:54:35,517 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:54:35,521 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:54:47,521 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:54:47,530 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:54:47,535 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:54:59,530 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:54:59,536 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:54:59,538 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:55:17,174 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:55:17,180 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:55:17,187 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:55:29,184 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:55:29,198 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:55:29,200 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:55:41,194 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:55:41,204 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:55:41,207 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:55:59,775 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:55:59,780 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:55:59,783 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:56:17,795 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:56:17,800 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:56:17,804 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:56:35,521 ERROR:searx.engines.wikidata: engine timeout
+2026-10-30 23:56:35,522 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:56:35,528 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:56:35,529 WARNING:searx.engines.wikidata: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'query.wikidata.org')) False
+2026-10-30 23:56:35,530 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:56:35,535 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:56:47,534 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:56:47,541 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:56:47,543 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:56:47,898 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Empower+India%22+site%3Alinkedin.com%2Fin&source=web
+2026-10-30 23:56:47,899 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-30 23:57:05,025 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:57:05,031 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:57:05,034 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:57:27,649 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:57:27,655 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:57:27,663 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:57:39,660 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:57:39,672 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:57:39,674 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:57:39,677 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.HTTPError', None, ('0', 'OK', 'search.yahoo.com')) False
+2026-10-30 23:57:51,669 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:57:51,680 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:57:51,684 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:58:03,679 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:58:03,687 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:58:03,688 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:58:21,312 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:58:21,318 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:58:21,323 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:58:33,322 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:58:33,330 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:58:33,338 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:58:45,337 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:58:45,349 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:58:45,351 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:58:57,347 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:58:57,354 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:58:57,357 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:59:17,264 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:59:17,317 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:59:17,318 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:59:29,277 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:59:29,285 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:59:29,288 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-30 23:59:58,852 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-30 23:59:58,862 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-30 23:59:58,867 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:00:10,865 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:00:10,877 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:00:10,883 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:00:22,878 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:00:22,888 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:00:22,891 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:01:29,384 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Milan+Rameshbhai+Dave%22+%22Ganga+Forging%22&source=web
+2026-10-31 00:01:29,388 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:01:35,796 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:01:35,811 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:01:35,813 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:01:47,808 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:01:47,815 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:01:47,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:02:05,491 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:02:05,496 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:02:05,499 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:02:22,557 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:02:22,562 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:02:22,563 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:02:45,844 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:02:45,862 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:02:45,864 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:02:57,855 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:02:57,874 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:02:57,875 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:03:09,866 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:03:09,884 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:03:09,888 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:03:21,878 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:03:21,897 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:03:21,898 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:03:33,889 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:03:33,897 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:03:33,901 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:03:51,465 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:03:51,474 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:03:51,480 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:04:08,925 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:04:08,930 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:04:08,933 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:04:27,709 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:04:27,717 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:04:27,721 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:04:32,265 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Growington+Ventures+India%22+%22board+of+directors%22+OR+%22leadership+team%22+OR+%22management+team%22+OR+%22key+managerial+personnel%22&source=web
+2026-10-31 00:04:32,268 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:04:44,890 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:04:44,896 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:04:44,897 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:05:08,440 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:05:08,452 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:05:08,455 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:05:20,450 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:05:20,457 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:05:20,462 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:05:32,461 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:05:32,467 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:05:32,469 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:05:56,169 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:05:56,175 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:05:56,178 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:06:13,556 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:06:13,564 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:06:13,573 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:06:25,571 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:06:25,579 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:06:25,582 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:06:52,483 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:06:52,489 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:06:52,490 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:07:09,669 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:07:09,675 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:07:09,678 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:07:27,953 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:07:27,959 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:07:27,961 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:07:50,598 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22ChinmayKumar+Patel%22+%22Nandan+Denim%22&source=web
+2026-10-31 00:07:50,600 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:08:02,137 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:08:02,143 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:08:02,146 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:08:19,552 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:08:19,556 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:08:19,558 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:09:11,940 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:09:11,948 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:09:11,951 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:09:29,318 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:09:29,324 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:09:29,327 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:09:50,803 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:09:50,814 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:09:50,817 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:10:02,812 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:10:02,819 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:10:02,820 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:10:20,655 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:10:20,661 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:10:20,664 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:10:38,038 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:10:38,043 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:10:38,045 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:11:01,087 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:11:01,092 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:11:01,094 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:11:01,420 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Titan+Intech+Limited%22+promoters+directors&source=web
+2026-10-31 00:11:01,422 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:11:18,998 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:11:19,004 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:11:19,006 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:11:36,580 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:11:36,598 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:11:36,602 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:11:48,593 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:11:48,601 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:11:48,604 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:12:06,115 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:12:06,120 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:12:06,123 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:12:23,533 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:12:23,538 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:12:23,540 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:12:40,980 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:12:40,985 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:12:40,992 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:12:52,990 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:12:52,996 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:12:52,999 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:12:53,006 WARNING:searx.engines.yahoo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.HTTPError', None, ('0', 'OK', 'search.yahoo.com')) False
+2026-10-31 00:13:10,381 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:13:10,387 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:13:10,389 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:13:32,334 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:13:32,340 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:13:32,343 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:13:49,496 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:13:49,500 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:13:49,505 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:14:01,504 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:14:01,518 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:14:01,522 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:14:01,848 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22DeFi+Development%22+%22board+of+directors%22+OR+%22leadership+team%22+OR+%22management+team%22+OR+%22key+managerial+personnel%22&source=web
+2026-10-31 00:14:01,849 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:14:13,517 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:14:13,525 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:14:13,528 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:14:34,374 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:14:34,378 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:14:34,380 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:14:51,984 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:14:51,991 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:14:51,995 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:15:09,772 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:15:09,780 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:15:09,781 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:15:35,221 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:15:35,228 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:15:35,232 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:15:52,901 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:15:52,907 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:15:52,910 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:16:11,113 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:16:11,121 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:16:11,123 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:16:28,660 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:16:28,665 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:16:28,668 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:16:46,608 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:16:46,614 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:16:46,616 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:17:03,910 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:17:03,915 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:17:03,919 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:17:04,358 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Lisa+Fan%22+%22Professional+Diversity+Network%22&source=web
+2026-10-31 00:17:04,360 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:17:21,391 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:17:21,398 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:17:21,399 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:17:39,301 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:17:39,308 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:17:39,312 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:17:58,282 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:17:58,288 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:17:58,291 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:18:15,723 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:18:15,729 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:18:15,734 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:18:33,730 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:18:33,736 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:18:33,737 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:18:51,763 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:18:51,781 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:18:51,782 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:19:03,773 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:19:03,788 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:19:03,789 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:19:15,784 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:19:15,792 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:19:15,797 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:19:35,563 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:19:35,569 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:19:35,572 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:19:54,366 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:19:54,373 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:19:54,374 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:20:12,328 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:20:12,334 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:20:12,336 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:20:23,280 WARNING:searx.network.brave: HTTP Request failed: GET https://search.brave.com/search?q=%22Joseph+Hammer%22+%22Expion+Energy%22&source=web
+2026-10-31 00:20:23,283 WARNING:searx.engines.brave: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'searx.exceptions.SearxEngineTooManyRequestsException', None, ('Too many request (suspended_time=180)',)) False
+2026-10-31 00:20:34,596 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:20:34,611 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:20:34,615 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:20:46,612 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:20:46,628 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:20:46,632 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:20:58,625 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:20:58,637 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:20:58,642 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:21:10,642 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:21:10,647 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:21:10,649 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:21:27,750 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:21:27,759 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:21:27,768 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
+2026-10-31 00:21:39,765 ERROR:searx.engines.duckduckgo: engine timeout
+2026-10-31 00:21:39,773 ERROR:searx: call to ResultContainer.add_unresponsive_engine after ResultContainer.close
+2026-10-31 00:21:39,775 WARNING:searx.engines.duckduckgo: ErrorContext('searx/search/processors/online.py', 211, 'response = req(params["url"], **request_args)  # pyright: ignore[reportArgumentType]', 'curl_cffi.requests.exceptions.Timeout', None, (None, None, 'html.duckduckgo.com')) False
