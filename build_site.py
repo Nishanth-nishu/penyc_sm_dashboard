@@ -68,6 +68,9 @@ def main():
     ov_by = {o["company_id"]: o for o in ovs}
     with_people = sum(r["people_i"] > 0 for r in rows)
     bands = {b: sum(band(r["score_f"]) == b for r in rows) for b in ("weak", "middling", "strong")}
+    band_note = ("Every company lands in the weak band (below 25)." if bands["middling"] + bands["strong"] == 0 else
+                 f'{bands["weak"]} companies land in the weak band (below 25), {bands["middling"]} reach middling (25-50)'
+                 + (f' and {bands["strong"]} strong (above 50).' if bands["strong"] else "."))
     gc = sum(r["going_concern"] in ("True", "true", "1") for r in rows)
     rm = sum(r["reverse_merger"] in ("True", "true", "1") for r in rows)
     e = html.escape
@@ -99,7 +102,7 @@ def main():
 <div class="stat"><b>{gc}</b><span>going-concern flags</span></div>
 <div class="stat"><b>{rm}</b><span>reverse-merger flags</span></div>
 </div>
-<p class="note">Scores come from an 8-billion-parameter model reading microcap filings on an 11 GB GPU. Every company lands in the weak band (below 25) and the ranking is driven mostly by hiring and headcount momentum; treat it as a screen, not a verdict. Coverage is the fraction of the workforce the score actually saw.</p>
+<p class="note">Scores come from an 8-billion-parameter model reading microcap filings on an 11 GB GPU. {band_note} The ranking is driven mostly by hiring and headcount momentum; treat it as a screen, not a verdict. Coverage is the fraction of the workforce the score actually saw.</p>
 <h2>Top 20 by talent score</h2>
 <table><thead><tr><th>Market</th><th>Ticker</th><th>Company</th><th>Score</th><th>Coverage</th><th>People</th></tr></thead><tbody>{top}</tbody></table>
 <p class="sub" style="margin-top:12px">Full ranking with component breakdowns and flags: <a href="dashboard.html">interactive dashboard</a> or <a href="scores.csv">scores.csv</a>.</p>

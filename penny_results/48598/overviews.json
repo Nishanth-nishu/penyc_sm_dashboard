@@ -1,0 +1,189 @@
+[
+ {
+  "company_id": "india:AXITA",
+  "ticker": "AXITA",
+  "name": "Axita Cotton Limited",
+  "market": "india",
+  "talent_score": 7.5,
+  "coverage": 0.0,
+  "overview": "Axita Cotton Limited is a textile manufacturing company listed on the NSE exchange in India. With a market capitalization of 2.75 billion INR and a price of 7.19 INR, the company is a relatively large player in its industry. However, the team behind the company appears to be weak, with a talent score of 7.5 out of 100, indicating that the quality of the people at the company is a concern. The score is based on a very small fraction of the workforce, as the coverage is 0.0, which means that the score is likely based on very few people. There are no red flags listed, but the overall talent score is a significant concern.",
+  "facts": {
+   "name": "Axita Cotton Limited",
+   "ticker": "AXITA",
+   "market": "india",
+   "exchange": "NSE",
+   "sector": "consumer",
+   "industry": "Textile Manufacturing",
+   "description": "Axita Cotton Limited engages in manufacturing, processing, finishing, and trading of cotton bales, yarns, seeds, and agri commodities in India and internationally. The company also engages in ginning and pressing of kapas on job work basis, as well as provision of other financial services. It serves traders, manufacturers, and merchant exporters. The company was founded in 2007 and is based in Ahmedabad, India.",
+   "website": "https://axitacotton.com",
+   "price": 7.19,
+   "currency": "INR",
+   "market_cap": 2751422720.0,
+   "headcount": 22,
+   "talent_score_0_100": 7.5,
+   "coverage_0_1": 0.0,
+   "score_components": {
+    "leadership": 0.0,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 0.0,
+    "integrity": 0
+   },
+   "named_people_total": 0
+  }
+ },
+ {
+  "company_id": "india:GENNEX",
+  "ticker": "GENNEX",
+  "name": "Gennex Laboratories Limited",
+  "market": "india",
+  "talent_score": 7.5,
+  "coverage": 0.0,
+  "overview": "Gennex Laboratories Limited is a pharmaceutical company based in Hyderabad, India, listed on the BSE exchange. The company has a market capitalization of 1.94 billion INR and a headcount of 125 employees. The leadership team is not well-represented in the talent score, with a leadership sub-score of 0.0, and the overall talent score is 7.5, indicating a weak team. The momentum sub-score is a relatively strong 50.0, but the lack of coverage (0.0) means that the score is based on limited information. There are no red flags listed, but the integrity penalty is 0, which is a positive indicator.",
+  "facts": {
+   "name": "Gennex Laboratories Limited",
+   "ticker": "GENNEX",
+   "market": "india",
+   "exchange": "BSE",
+   "sector": "pharma",
+   "industry": "Drug Manufacturers - Specialty & Generic",
+   "description": "Gennex Laboratories Limited manufactures and sells bulk drugs, intermediates, and biotech products. The company offers Guaifenesin, an expectorant used as a mucolyte; Methocarbamol for skeletal muscle relaxant; Fexofenadine Hcl for treating antihistamines; Phenazopyridine Hcl for the treatment of urinary tract analgesic; Fluconazole for antifungals; Melitracen Hcl for treating tricyclic antidepressant; Sertraline Hcl, a selective serotonin reuptake inhibitor; Chlorphenesin and Mephenesin; and Allopurinol, a xanthine oxidase inhibitor. It has operations in India, Algeria, Bangladesh, Barzil, Bolivia, Colombia, the Czech Republic, Egypt, El Salvador, Germany, Guatemala City, Mexico, Peru, Spain, Turkey, Thailand, the United Arab Emirates, and Vietnam. Gennex Laboratories Limited was formerly known as Prudential Pharmaceuticals Limited and changed its name to Gennex Laboratories Limited in September 2007. Gennex Laboratories Limited was incorporated in 1985 and is based in Hyderabad, India.",
+   "website": "https://www.gennexlab.com",
+   "price": 8.02,
+   "currency": "INR",
+   "market_cap": 1948440448.0,
+   "headcount": 125,
+   "talent_score_0_100": 7.5,
+   "coverage_0_1": 0.0,
+   "score_components": {
+    "leadership": 0.0,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 0.0,
+    "integrity": 0
+   },
+   "named_people_total": 0
+  }
+ },
+ {
+  "company_id": "us:IPDN",
+  "ticker": "IPDN",
+  "name": "Professional Diversity Network, Inc.",
+  "market": "us",
+  "talent_score": 13.0,
+  "coverage": 0.39,
+  "overview": "Professional Diversity Network, Inc. (IPDN) operates online professional networking communities with career resources in the United States. Listed on the NasdaqCM exchange, the company has a market capitalization of $1.26 million and a headcount of 34 employees. The leadership team includes Adam He, Bella Gu, and Hao Zhang, among others. However, the talent score of 13 is weak, indicating a lack of quality in the people at the company. The score is also based on limited coverage, with only 39% of the workforce seen. Red flags include going concern issues and auditor changes, which may indicate underlying problems with the company's financials.",
+  "facts": {
+   "name": "Professional Diversity Network, Inc.",
+   "ticker": "IPDN",
+   "market": "us",
+   "exchange": "NasdaqCM",
+   "sector": "industrial",
+   "industry": "Staffing & Employment Services",
+   "description": "Professional Diversity Network, Inc. operates online professional networking communities with career resources in the United States. It operates through three segments: TalentAlly, National Association of Professional Women (NAPW Network), and RemoteMore USA. The company offers recruitment services, such as single and multiple job postings, recruitment media, talent recruitment communities, corporate memberships, hiring campaign marketing and advertising, e-newsletter marketing, and research and outreach services to various cultural groups and employers; and licensing and promotional activities for copyright products. It also provides consumer advertising and consumer marketing solutions through advertising and job postings on its websites; and contracted software development services. In addition, the company offers IAW Leadership Lab, which provides virtual networking roundtable events; Professional Identity Management through the NAPW network website and members creates, manages, and shares professional identity online and promote themselves and businesses; monthly newsletters, online and in-person seminars, webinars and certification courses to develop their skills and expand t",
+   "website": "https://www.ipdn.com",
+   "price": 1.9,
+   "currency": "USD",
+   "market_cap": 1265040.0,
+   "headcount": 34,
+   "headcount_as_of": "2025-12-31",
+   "talent_score_0_100": 13.0,
+   "coverage_0_1": 0.39,
+   "score_components": {
+    "leadership": 10.6,
+    "technical_bench": 0.0,
+    "momentum": 50.0,
+    "density": 100.0,
+    "integrity": 55.0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-08-14",
+    "last_annual_report_date": "2026-03-31",
+    "going_concern": true,
+    "auditor_changes_24m": 1,
+    "evidence": [
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774925035165/ipdn20250930_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_fts",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774926017232/ipdn20260331_10q.htm",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "substantial doubt / going concern"
+     },
+     {
+      "kind": "sec_8k",
+      "url": "https://www.sec.gov/Archives/edgar/data/1546296/000143774925024489/",
+      "fetched_at": null,
+      "doc_hash": null,
+      "note": "Item 4.01 auditor change"
+     }
+    ]
+   },
+   "leadership": [
+    "Adam He (cxo)",
+    "Bella Gu (Chief Financial Officer)",
+    "Chad Hoersten (Chief Technology Officer)",
+    "Chief Technology Officer (cxo)",
+    "Hao Zhang (Chairman of the Board)",
+    "Lisa Fan (cxo)",
+    "Megan Bozzuto (cxo)",
+    "Russell Esquivel, Jr. (Chief Revenue Officer)"
+   ],
+   "named_people_total": 20
+  }
+ },
+ {
+  "company_id": "india:URJA",
+  "ticker": "URJA",
+  "name": "Urja Global Limited",
+  "market": "india",
+  "talent_score": 21.8,
+  "coverage": 0.6,
+  "overview": "Urja Global Limited is a technology company listed on the NSE in India, with a market capitalization of 4479 billion INR and a price of 8.04 INR. The company is involved in various sectors, including solar energy, battery manufacturing, and property development. With a headcount of 45 employees, Urja Global is a relatively small company. The leadership team is comprised of 8 individuals, but the talent score of 21.8 is weak, indicating a lack of quality in the people at the company. The score is based on a limited coverage of the workforce, with only 60% of employees being assessed. There are no red flags listed for the company.",
+  "facts": {
+   "name": "Urja Global Limited",
+   "ticker": "URJA",
+   "market": "india",
+   "exchange": "NSE",
+   "sector": "technology",
+   "industry": "Solar",
+   "description": "Urja Global Limited, together with its subsidiaries, engages in the design, consultancy, integration, supply, installation, commissioning, and maintenance of off-grid and grid-connected solar power plants and decentralized solar applications in India. The company offers lithium IOB, automotive, inverter, solar, and e-rickshaw batteries under the Urja and I-volt brand names; solar study lamps, LED lanterns, solar panels and inverters, and solar home lighting solutions; Urja Solar Atta Chakki, solar water pumps, and solar rooftop systems; and e-rickshaws and e-scooters. It is also involved in mineral exploration, extraction, and processing; residential and commercial property development; and digital technology landscape. In addition, the company manufactures and distributes wide range of batteries, including automotive, industrial, and renewable energy storage solutions. Urja Global Limited was incorporated in 1992 and is based in New Delhi, India.",
+   "website": "https://urjaglobal.in",
+   "price": 8.04,
+   "currency": "INR",
+   "market_cap": 4479936512.0,
+   "headcount": 45,
+   "headcount_as_of": "2026-03-31",
+   "talent_score_0_100": 21.8,
+   "coverage_0_1": 0.6,
+   "score_components": {
+    "leadership": 10.0,
+    "technical_bench": 0.0,
+    "momentum": 55.0,
+    "density": 100.0,
+    "integrity": 0
+   },
+   "red_flags": {
+    "last_filing_date": "2026-03-31",
+    "last_annual_report_date": "2026-03-31"
+   },
+   "leadership": [
+    "Mr. Mohan Jagdish Agarwal (Managing Director)",
+    "Mr. Yogesh Kumar Goyal (Whole Time Director)",
+    "Dr. Gajanand Gupta (Director)",
+    "Dr. Gopalsetty Prasad Rao (Director)",
+    "Dr. Mukul Jain (Director)",
+    "Ms. Mita Sinha (Director)",
+    "Ms. Payal Sharma (Director)",
+    "Saumya Srivastava (Director)"
+   ],
+   "named_people_total": 36
+  }
+ }
+]

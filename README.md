@@ -20,10 +20,10 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 
 | | |
 |---|---|
-| Companies scored | 92 of 100 (job 47991 export), all in the weak band; top is Urja Global 23.2 |
-| Companies with named people | 65 |
-| Still skipped | 8: A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV (model loops on their first chunk even at 15000 chars; needs a `num_predict` cap in the pipeline, see PENNY_RESULTS.md) |
-| Job in progress | none. Last: 47991 on gnode049 (30 Oct 08:09-09:04 UTC), recovered AMOD, JZ, ALEC |
+| Companies scored | 100 of 100 (job 48860 export); 98 weak, 2 middling: Tenax Therapeutics 30.3, GACM Technologies 25.7 |
+| Companies with named people | 76 (24 Indian companies still have nobody named; the search-only pass 49406 targets them) |
+| Still skipped | none. The 8 loopers (A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV) are scored since job 48860 (`num_predict: 4096` cap) |
+| Job in progress | 49406 (ihub CPU, search-only pass with the fixed client, from 48860's DB). Last finished: 48860 on gnode095 (30 Oct 16:22-18:04 UTC), 35 companies rerun with search + reply cap |
 | Website | **Live at https://penycsmdashboard.vercel.app/** (Vercel project `penyc_sm_dashboard`, team nishanth-nishus-projects, Git-connected to this repo). `vercel.json` serves `docs/` as a static site with no build step; every push to `main` redeploys in under a minute. GitHub Pages is not used. |
 | Results note | `PENNY_RESULTS.md` (numbers, top 10, failure analysis, rerun history) |
 
@@ -151,6 +151,15 @@ python3 build_site.py penny_results/<job> && git add docs && git commit -m "site
 10. Job 47991 (gnode049, 55 min) recovered AMOD, JZ and ALEC: 92 of 100 scored. The other 8
    time out on their first chunk regardless of size; the model loops inside the JSON-schema
    output because nothing caps `num_predict`. Site rebuilt from 47991.
+11. `num_predict: 4096` cap in `extract/bios.py` (commit c1ff8b8 on `ada-fixes`); truncated output
+   fails JSON validation and is logged as a bad chunk instead of hanging the company.
+12. SearXNG search layer (section 3a): per-job instance, `websearch.py`, enrich part `web`,
+   `profiles` stage, tests; validated on CPU (48600/48659/48683), then GPU pilot 48598 exposed
+   Bing junk / Yahoo padding from the cluster → `relevant()` filter, no caching of empty answers,
+   engine set rewritten (commits 496c729 / 86b3978).
+13. Job 48860 (gnode095, 1 h 41 min): the 35 no-people companies rerun with cap + search.
+   All 8 loopers scored (TENX 30.3 is the new top), 100 of 100 scored, 76 with people. Site
+   rebuilt from 48860. Search-only pass 49406 submitted for the remaining 24.
 
 ## 6. Cluster lessons (read before running anything)
 

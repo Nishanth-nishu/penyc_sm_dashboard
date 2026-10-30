@@ -31,28 +31,27 @@ Vercel redeploys the site about a minute after the push.
 | | |
 |---|---|
 | Companies processed | 100 (50 India, 50 US) |
-| Companies with at least one named person | 50 (65 after reruns) |
-| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 35 after reruns |
-| Score band | all 100 are "weak" (< 25) by the pipeline's own thresholds |
+| Companies with at least one named person | 50 (76 after reruns) |
+| Companies with no people (no filing text found, or stage failed) | 50 (31 India, 19 US); 24 after reruns, all India |
+| Score band | 98 "weak" (< 25) and 2 "middling" (25-50) after reruns: Tenax Therapeutics 30.3, GACM Technologies 25.7 |
 | Going-concern flags | 24 (35 after reruns) |
 | Reverse-merger flags | 9 (12 after reruns) |
-| Per-company failures | 23 (8 after reruns, see below) |
+| Per-company failures | 23 (0 after reruns, see below) |
 
 Top 10 by talent score:
 
 | Market | Ticker | Name | Score | Coverage | People |
 |---|---|---|---|---|---|
+| us | TENX | Tenax Therapeutics (added by rerun 48860) | 30.3 | 0.70 | 17 |
+| india | GATECH | GACM Technologies (added by rerun 48860) | 25.7 | 0.60 | 17 |
 | india | URJA | Urja Global | 23.2 | 0.60 | 33 |
 | india | IVC | IL&FS Investment Managers | 21.6 | 0.52 | 10 |
 | india | AVROIND | Avro India | 21.5 | 0.21 | 13 |
 | india | EVEXIA | Evexia Lifecare | 21.0 | 0.60 | 23 |
 | india | LANDSMILL | Landsmill Green | 21.0 | 0.60 | 23 |
-| india | VSL | Viram Suvarn (added by rerun 47396) | 21.0 | 0.45 | 22 |
 | us | DAVI | Davion Healthcare | 21.0 | 0.60 | 8 |
+| india | VSL | Viram Suvarn (added by rerun 47396) | 21.0 | 0.45 | 22 |
 | india | STARLENT | StarlinePS Enterprises | 20.3 | 0.60 | 16 |
-| india | NHCFOODS | NHC Foods | 20.2 | 0.32 | 15 |
-| us | TNON | Tenon Medical | 19.6 | 0.60 | 27 |
-| india | SARVESHWAR | Sarveshwar Foods | 18.8 | 0.29 | 12 |
 
 The ranking is driven almost entirely by the momentum component (headcount / hiring / insider data); leadership is 10 or less for nearly every company and technical bench is 0 everywhere, which is what an 8B model extracting from microcap filings produces.
 
@@ -103,10 +102,32 @@ list entries forever until the client gives up. The fix is in the pipeline, not 
 to the Ollama `options` in `src/talent/extract/bios.py` so a runaway chunk returns truncated JSON, fails validation and
 is logged as a bad chunk while the company's other chunks still count.
 
-`penny_results/47991/` is now the most complete export (92 scored); use its `talent.db` as `PENNY_RESTORE_DB` for
-any further rerun.
+**Job 48598 (gnode095, RTX 3080 Ti, 30 Oct 2026 16:00-16:23 UTC / 21:30-21:53 IST): GPU pilot of the search layer, exit 0.**
+AXITA, GENNEX, IPDN, URJA with Ollama, SearXNG, `num_predict` cap, 300 s timeout, 15000-char chunks. The plumbing worked
+(GPU guard, search-check, 6/6 tests, 2 `web_page` docs for URJA) but AXITA and GENNEX got no people: from the node Bing
+ignored the query and returned trending pages, Brave was rate-limited and DuckDuckGo CAPTCHA'd, so the 60 "results" were
+junk. Fixed afterwards in the client (`relevant()` filter, no caching of empty answers) and in the engine set (README 3a).
 
-## Rerunning the failed companies
+**Job 48860 (gnode095, RTX 3080 Ti, 30 Oct 2026 16:22-18:04 UTC / 21:52-23:34 IST): 11 of 35 gained people, exit 0.**
+`PENNY_MODE=rerun` over the 35 companies with no named people (the 8 loopers among them), DB restored from job 47991,
+`num_predict: 4096`, `ollama_timeout_s: 300`, `ollama_chunk_chars: 15000`, SearXNG on. 158 Ollama calls, 0 timeouts,
+11 outputs truncated by the cap and dropped as invalid JSON (one chunk each for A1L, DISHTV, GATECH, DFDV, GPRO, TENX)
+while the companies' other chunks counted. All 8 loopers are scored: TENX 30.3 (17 people), GATECH 25.7 (17),
+DFDV 19.2 (28), XPON 14.7 (11), IPDN 13.0 (20), XHG 10.4 (8), A1L 9.5 (24), GPRO 3.1 (16); also AFIL 16.1 (21),
+DISHTV 12.2 (31), TUNITEX 8.2 (1). 100 of 100 scored, 76 with named people. Search contributed only 10 mentions:
+the job ran the pre-filter client, so its SearXNG instance was restarted mid-run with Bing off and then Yahoo off
+(DuckDuckGo + Brave only). The 24 companies still without people are all Indian BSE names whose filings exposed no
+management text: AGOL, AVANCE, AXITA, BRIDGESE, BTML, CHANDRIMA, COMFINTE, DAVANGERE, EMPOWER, ESSENTIA, EXXARO,
+GANGAFORGE, GENNEX, GROWINGTON, KSHITIJPOL, MISHTANN, NDL, OMEGAIN, SHAH, SIKKO, TITANIN, ULTRACAB, WORTH, ZEEMEDIA.
+
+**Job 49406 (ihub CPU, started 30 Oct 2026 18:06 UTC / 23:36 IST):** search-only pass over the same 35
+(`PENNY_LLM=0 PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web`, DB restored from 48860) with the
+fixed client and engine set: snippet people for the 24 and profile matching for everyone's people. Results pending.
+
+`penny_results/48860/` is now the most complete export (100 scored); use its `talent.db` (or 49406's once it lands) as
+`PENNY_RESTORE_DB` for any further rerun.
+
+## Rerunning companies
 
 Inside a job with the venv and Ollama up (see `penny_run.sh`), the DB in `/scratch/nishanth.r/penny/data/talent.db` is incremental:
 
