@@ -1,6 +1,6 @@
 # Penny-stocks talent pipeline on Ada: handover
 
-Last updated 2026-10-30 11:05 UTC (16:35 IST). Written for whoever picks this up next,
+Last updated 2026-10-30 12:00 UTC (17:30 IST). Moved here from glycemico-pred on 30 Oct 2026; that repo keeps the commit history (1a5aa1e..1fabbf9) but none of the files. Written for whoever picks this up next,
 human or Claude session. Everything here lives in this repo (`penyc_sm_dashboard`, folder
 checked out at `/home2/nishanth.r/penyc_sm_dashboard` on the Ada login node) except the private
 pipeline repo and the job outputs that are too big for git.
@@ -24,7 +24,7 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 | Companies with named people | 65 |
 | Still skipped | 8: A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV (model loops on their first chunk even at 15000 chars; needs a `num_predict` cap in the pipeline, see PENNY_RESULTS.md) |
 | Job in progress | none. Last: 47991 on gnode049 (30 Oct 08:09-09:04 UTC), recovered AMOD, JZ, ALEC |
-| Website | **Live** at https://nishanth-nishu.github.io/penyc_sm_dashboard/ (GitHub Pages, branch `main`, folder `/docs`, enabled 2026-10-30 11:00 UTC / 16:30 IST via the REST API after the Settings UI saves did not register). Rebuild with `build_site.py` and push; Pages redeploys in about a minute. |
+| Website | `docs/` is the GitHub Pages site. Pages on this repo must be enabled once (Settings > Pages: Deploy from a branch, `main`, `/docs`, or `POST /repos/Nishanth-nishu/penyc_sm_dashboard/pages`); it then serves https://nishanth-nishu.github.io/penyc_sm_dashboard/ and redeploys about a minute after each push. The earlier site under glycemico-pred is switched off. |
 | Results note | `PENNY_RESULTS.md` (numbers, top 10, failure analysis, rerun history) |
 
 ## 3. Where things live
