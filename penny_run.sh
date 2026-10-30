@@ -33,7 +33,7 @@
 
 set -o pipefail
 SRC=/home2/nishanth.r/penyc_sm_dashboard/penny-stocks-investing
-PROJ=/scratch/nishanth.r/penny
+PROJ=${PENNY_PROJ:-/scratch/nishanth.r/penny}   # per-node work dir; override when two penny jobs may share a node
 RESULTS=/home2/nishanth.r/penyc_sm_dashboard/penny_results/$SLURM_JOB_ID
 MODE=${PENNY_MODE:-pilot}
 TICKERS=${PENNY_TICKERS:-"PDSB india:NHCFOODS"}
@@ -43,6 +43,7 @@ export LD_LIBRARY_PATH=/software/apps/u22/python/3.12.15/lib${LD_LIBRARY_PATH:+:
 NUM_CTX=${PENNY_NUM_CTX:-16384}   # 32768 in the repo default; 16k keeps llama3.1:8b inside an 11 GB card
 OLLAMA_TIMEOUT=${PENNY_OLLAMA_TIMEOUT:-900}   # per-call cap; the 8B model sometimes loops on a chunk (15-25 min); normal calls take <40 s on a 1080 Ti, so 300 is safe
 CHUNK_CHARS=${PENNY_CHUNK_CHARS:-40000}   # chars per Ollama extraction call; 15000 for companies whose 40k chunks make the model loop
+LLM=${PENNY_LLM:-1}         # 0 = no Ollama/GPU: extraction provider none (search-layer tests on a CPU allocation)
 SEARCH=${PENNY_SEARCH:-1}   # 1 = start a private SearXNG next to Ollama and use it for web search (0 = filings/site only)
 RESTORE_DB=${PENNY_RESTORE_DB:-}   # talent.db from a previous results dir; always copied over scratch when set (node scratch may hold an older run)
 
@@ -50,7 +51,7 @@ echo "=========================================="
 echo "PENNY TALENT | job $SLURM_JOB_ID on $SLURM_NODELIST | mode=$MODE model=$MODEL"
 echo "start: $(date -u '+%F %T') UTC / $(TZ=Asia/Kolkata date '+%T') IST"
 echo "=========================================="
-nvidia-smi --query-gpu=name,driver_version,memory.total,memory.free,utilization.gpu --format=csv,noheader
+nvidia-smi --query-gpu=name,driver_version,memory.total,memory.free,utilization.gpu --format=csv,noheader 2>/dev/null || echo "no GPU (nvidia-smi unavailable)"
 
 # ── 1. stage repo into scratch (keep data/ and .venv between runs: caches live there)
 mkdir -p "$PROJ" "$RESULTS"
@@ -74,12 +75,17 @@ fi
 .venv/bin/python -m pip install -q -e ".[dev]" || { echo "pip install failed"; exit 1; }
 echo "venv python: $(.venv/bin/python --version)"
 
-# ── 3. Ollama from node scratch
+# ── 3. Ollama from node scratch (skipped with PENNY_LLM=0)
+if [ "$LLM" = 1 ]; then
 source /home2/nishanth.r/penyc_sm_dashboard/ollama_env.sh "$MODEL" || exit 1
-trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; cp "$SEARXNG_LOG" "$RESULTS/searxng.log" 2>/dev/null; searxng_stop 2>/dev/null; ollama_sync_back' EXIT   # keep the server logs: scratch dies with the job
+trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; cp "$SEARXNG_LOG" "$RESULTS/searxng.log" 2>/dev/null; type searxng_stop >/dev/null 2>&1 && searxng_stop; type ollama_sync_back >/dev/null 2>&1 && ollama_sync_back' EXIT   # keep the server logs: scratch dies with the job
 export TALENT_EXTRACTION_PROVIDER=ollama
 export TALENT_OLLAMA_URL="http://$OLLAMA_HOST"
 export TALENT_OLLAMA_MODEL="$MODEL"
+else
+export TALENT_EXTRACTION_PROVIDER=none
+echo "PENNY_LLM=0: no Ollama; extraction provider none (people come from search snippets/regex only)"
+fi
 export PYTHONPATH="$PROJ/src"
 talent() { "$PROJ/.venv/bin/python" -m talent.cli "$@"; }
 
@@ -93,8 +99,10 @@ fi
 # ── 4. pipeline
 stage() { echo; echo "────────── $1  ($(date -u +%T) UTC)"; }
 
+if [ "$LLM" = 1 ]; then
 stage "llm-check"
 talent llm-check || exit 1
+fi
 if [ -n "$TALENT_SEARXNG_URL" ]; then
     stage "search-check"
     talent search-check || echo "search-check failed; web search parts will be skipped where unavailable"
@@ -103,6 +111,7 @@ if [ "$MODE" = "pilot" ]; then
     stage "unit tests (offline)"
     .venv/bin/python -m pytest -q tests/test_websearch.py 2>&1 | tail -5
 fi
+if [ "$LLM" = 1 ]; then
 # Job 47116 (gnode033) ran the whole pipeline at CPU speed (31 tok/s vs 329 on a 1080 Ti) and every call hit the
 # timeout. Refuse to continue unless the model is fully on the GPU.
 grep -iE 'inference compute|library=|no compatible|unable to load' "$SCR/serve_${SLURM_JOB_ID}.log" | head -5
@@ -115,6 +124,7 @@ if ! ollama ps | grep -qE '100% *GPU'; then
         exit 3
     fi
 fi
+fi   # LLM
 
 if [ "$MODE" != "rerun" ]; then       # rerun keeps the universe already in the DB so the export stays comparable
     stage "universe build"
