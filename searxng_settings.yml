@@ -1,5 +1,5 @@
 # SearXNG settings for the private, per-job instance started by searxng_env.sh.
-# __PORT__ and __SECRET__ are substituted at job start. Everything not listed here
+# The port and secret placeholders are substituted at job start. Everything not listed here
 # comes from the SearXNG defaults (searx/settings.yml in the checkout).
 use_default_settings: true
 
@@ -37,12 +37,42 @@ outgoing:
   pool_maxsize: 10
   enable_http2: true
 
-# Engines: the defaults already enable duckduckgo, brave, startpage, qwant, mojeek and wikipedia.
-# Bing is enabled here as an extra general engine; Google stays off (CAPTCHAs from datacenter IPs).
+# Engines (merged by name into the SearXNG defaults). Measured from Ada compute nodes on 30 Oct 2026:
+#   yahoo       : answers reliably with real results
+#   duckduckgo  : real results, intermittent CAPTCHA (SearXNG suspends it for a while, then retries)
+#   brave       : real results until "too many requests" (suspended ~minutes); keep the query rate low
+#   mojeek, startpage : enabled as extra general engines (startpage may CAPTCHA datacenter IPs)
+#   bing        : OFF - ignores the query from this network and returns unrelated trending pages
+#   google, qwant : OFF - "access denied" from datacenter IPs; google cse needs an API key (429 without)
+#   wikipedia   : OFF - HTTP 400 from here; not a general web engine anyway
 engines:
+  - name: yahoo
+    engine: yahoo
+    disabled: false
+  - name: duckduckgo
+    engine: duckduckgo
+    disabled: false
+  - name: brave
+    engine: brave
+    disabled: false
+  - name: mojeek
+    engine: mojeek
+    disabled: false
+  - name: startpage
+    engine: startpage
+    disabled: false
   - name: bing
     engine: bing
-    disabled: false
+    disabled: true
+  - name: google
+    engine: google
+    disabled: true
+  - name: google cse
+    engine: google_cse
+    disabled: true
+  - name: qwant
+    engine: qwant
+    disabled: true
   - name: wikipedia
     engine: wikipedia
-    disabled: false
+    disabled: true

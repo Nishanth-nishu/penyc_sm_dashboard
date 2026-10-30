@@ -133,17 +133,21 @@ if [ "$MODE" != "rerun" ]; then       # rerun keeps the universe already in the 
     talent universe show --limit 10
 fi
 
+# Optional stage / enrich-part selection, e.g. a search-only pass over companies already fetched:
+#   PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web
+SEL=(); [ -n "${PENNY_STAGES:-}" ] && SEL+=(--stage "$PENNY_STAGES"); [ -n "${PENNY_ENRICH_PARTS:-}" ] && SEL+=(--enrich-parts "$PENNY_ENRICH_PARTS")
+[ ${#SEL[@]} -gt 0 ] && echo "run-all selection: ${SEL[*]}"
 if [ "$MODE" = "full" ]; then
     stage "run-all (all selected companies)"
-    talent run-all
+    talent run-all "${SEL[@]}"
 elif [ "$MODE" = "rerun" ]; then
     stage "run-all rerun: $TICKERS"
     ARGS=(); for t in $TICKERS; do ARGS+=(--ticker "$t"); done
-    talent run-all "${ARGS[@]}"
+    talent run-all "${ARGS[@]}" "${SEL[@]}"
 else
     stage "run-all pilot: $TICKERS"
     ARGS=(); for t in $TICKERS; do ARGS+=(--ticker "$t"); done
-    talent run-all "${ARGS[@]}"
+    talent run-all "${ARGS[@]}" "${SEL[@]}"
     for t in $TICKERS; do
         stage "score --explain $t"; talent score "$t" --explain
         stage "people show $t";     talent people show "$t"

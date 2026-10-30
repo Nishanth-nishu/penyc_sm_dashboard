@@ -64,8 +64,8 @@ gap through a **private SearXNG instance** (https://github.com/searxng/searxng, 
 | Piece | What it does |
 |---|---|
 | `searxng_env.sh` | Sourced by `penny_run.sh` (unless `PENNY_SEARCH=0`): rsyncs the clone to `/scratch/nishanth.r/searxng/src`, builds a venv from its `requirements.txt`, renders `searxng_settings.yml` (JSON API on, limiter off, port `30000 + jobid % 10000`, loopback only), starts `python -m searx.webapp`, waits for `/healthz`, runs one test query, exports `TALENT_SEARXNG_URL`. Its log is copied to `penny_results/<job>/searxng.log`. |
-| `searxng_settings.yml` | Instance settings; engines are SearXNG's defaults (DuckDuckGo, Brave, Startpage, Qwant, Mojeek, Wikipedia) plus Bing. Google stays off (CAPTCHAs from datacenter IPs). |
-| `src/talent/sources/websearch.py` | Provider chain `searxng` → `google` → `brave` (`websearch.providers` in `config/sources.yaml`). Query templates with `{name} {short} {ticker} {exchange} {domain} {person}`. Results are cached on disk like every other HTTP response (`websearch.cache_days`). Denylisted hosts (LinkedIn, Crunchbase, ...) are never fetched; their URLs are pointers only. |
+| `searxng_settings.yml` | Instance settings. Engines, as measured from Ada nodes on 30 Oct 2026: **Yahoo** (reliable), **DuckDuckGo** (real results, intermittent CAPTCHA), **Brave** (real results until "too many requests"), Mojeek and Startpage enabled as extras; **Bing off** (from this network it ignores the query and returns trending pages), Google/Qwant off (access denied), Wikipedia off (HTTP 400). |
+| `src/talent/sources/websearch.py` | Provider chain `searxng` → `google` → `brave` (`websearch.providers` in `config/sources.yaml`). Query templates with `{name} {short} {ticker} {exchange} {domain} {person}`. Results are cached on disk by query (`websearch.cache_days`), but **empty answers are never cached** (they mean throttled engines). `relevant()` drops any result whose title/snippet/url does not mention the company's distinctive name token (or two tokens, or its domain): Bing junk and Yahoo's padding with other companies' leadership pages never reach the snippet parser, the LLM or the page fetcher. Denylisted hosts (LinkedIn, Crunchbase, ...) are never fetched; their URLs are pointers only. |
 | enrich part `web` (`stages/enrich.py`) | Per company: (1) parse "Name - Title - Company" result titles into mentions; (2) run the LLM extractor over all titles+snippets as one short document; (3) fetch up to `max_pages` result pages that look like leadership pages or appointment news (polite client: robots, cache, denylist) and extract people from them (source kind `web_page`). |
 | `stages/filings.py` (India) | When the company site exposes fewer than two annual-report PDFs, `find_annual_report_pdfs` searches for them (`"<short name>" "annual report" filetype:pdf`) and feeds them to the same PDF extraction. |
 | `stages/profiles.py` (new stage, after `resolve`) | **Profile matching.** For each resolved person (most senior first, `max_people_for_profiles`), searches `"<person>" "<company>"`, scores each result 0-1 on name-in-title, company-in-snippet, profile host, current-title words, and stores the top links as `Person.profile_links`, adds a `profile_url` claim per strong match (≥ 0.75), bumps confidence, and upgrades `cannot_verify` to `probably_genuine` when two strong matches exist. Exported per person as `profiles` in `dashboard.json`. |
@@ -84,11 +84,19 @@ Validation so far (30 Oct 2026, CPU-only jobs with `PENNY_LLM=0`, ihub partition
 | 48600 | SearXNG up on the node (48 results from Bing/Brave/DuckDuckGo), search-check ok, 6/6 tests, 4 companies, 0 errors, 10 pages fetched, 14 profile claims. Title parser let company names through ("Key Management", "Our Leadership"). |
 | 48659 | Stricter parser, but 0 search people: the cache was keyed on the per-job SearXNG port, so every query re-ran against engines already throttling the node (DuckDuckGo timeouts, Google 429). |
 | 48683 | Cache keyed by query, 1 query / 2 s: 13 people from search for AXITA (1), GENNEX (6), IPDN (9), e.g. Kushal Patel (MD, Axita), Arihant Baid (MD, Gennex), Jodi Shamblott (IPDN); 11 `web_page` docs; 15 profile claims; 6/6 tests. |
+| 48598 (GPU, RTX 3080 Ti, 24 min) | First run with the LLM over snippets and pages: GPU guard, search-check, 6/6 tests, 4 companies, 0 errors, URJA got 2 `web_page` docs. But AXITA and GENNEX ended with **0 people**: Brave was suspended and DuckDuckGo CAPTCHA'd, so 60 of the "results" were Bing trending junk (ChatGPT, Diwali dates) that the parser rightly rejected and the model answered with empty JSON. Live queries on the node showed Yahoo answering correctly and Bing ignoring the query. |
 
 Known limits: snippet people include some past or peripheral staff (a CFO now at another company whose profile still
 mentions Gennex); they land as low-authority `named_staff` mentions and the extractor/profile stages decide what sticks.
-DuckDuckGo times out from the cluster; Bing and Brave carry most answers. The full pilot with the LLM over snippets and
-pages (job 48598, GPU) is queued until an ihub GPU frees up.
+Engine behaviour from the cluster changes by the hour (CAPTCHA and 429 suspensions), so a run's search yield depends on
+which engines answer; the client-side `relevant()` filter and the no-cache-on-empty rule (commit 496c729 on `ada-fixes`)
+make a bad hour cost coverage, never correctness.
+
+Job 48860 (GPU, 35 companies, started 30 Oct 16:22 UTC) runs the pre-filter client, so its SearXNG instance was restarted
+mid-run with Bing off and then Yahoo off (DuckDuckGo + Brave only, cache of Bing junk moved aside); expect few search people
+from it. Planned follow-up: a search-only pass (`PENNY_STAGES=enrich,resolve,profiles,score PENNY_ENRICH_PARTS=web`,
+restoring `penny_results/48860/talent.db`) with the fixed client, on CPU first (`PENNY_LLM=0`: snippet people + profile
+matching) and on a GPU when one frees (LLM over snippets and fetched pages).
 
 ## 4. How to run
 
