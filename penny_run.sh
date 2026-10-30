@@ -75,10 +75,11 @@ fi
 .venv/bin/python -m pip install -q -e ".[dev]" || { echo "pip install failed"; exit 1; }
 echo "venv python: $(.venv/bin/python --version)"
 
+trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; cp "$SEARXNG_LOG" "$RESULTS/searxng.log" 2>/dev/null; type searxng_stop >/dev/null 2>&1 && searxng_stop; type ollama_sync_back >/dev/null 2>&1 && ollama_sync_back' EXIT   # keep the server logs: scratch dies with the job
+
 # ── 3. Ollama from node scratch (skipped with PENNY_LLM=0)
 if [ "$LLM" = 1 ]; then
 source /home2/nishanth.r/penyc_sm_dashboard/ollama_env.sh "$MODEL" || exit 1
-trap 'cp "$SCR/serve_${SLURM_JOB_ID}.log" "$RESULTS/ollama_serve.log" 2>/dev/null; cp "$SEARXNG_LOG" "$RESULTS/searxng.log" 2>/dev/null; type searxng_stop >/dev/null 2>&1 && searxng_stop; type ollama_sync_back >/dev/null 2>&1 && ollama_sync_back' EXIT   # keep the server logs: scratch dies with the job
 export TALENT_EXTRACTION_PROVIDER=ollama
 export TALENT_OLLAMA_URL="http://$OLLAMA_HOST"
 export TALENT_OLLAMA_MODEL="$MODEL"
@@ -154,9 +155,13 @@ talent status
 talent export
 
 # ── 5. company overviews via the same Ollama server
+if [ "$LLM" = 1 ]; then
 stage "overview summaries"
 if [ "$MODE" = "full" ] || [ "$MODE" = "rerun" ]; then ONLY=(); else ONLY=(--only); for t in $TICKERS; do case "$t" in india:*) ONLY+=("$t");; *) ONLY+=("us:$t");; esac; done; fi
 PENNY_MODEL="$MODEL" .venv/bin/python /home2/nishanth.r/penyc_sm_dashboard/summarize_overviews.py --db data/talent.db --out "$RESULTS" "${ONLY[@]}"
+else
+echo "PENNY_LLM=0: overview summaries skipped"
+fi
 
 # ── 6. copy results home
 cp -r data/export "$RESULTS/" 2>/dev/null
