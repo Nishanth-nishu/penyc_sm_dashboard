@@ -7,9 +7,12 @@
 Produces index.html (run summary + leaderboard), overviews.html (all company overviews, searchable),
 dashboard.html (the pipeline's own interactive board, copied as is), scores.csv and overviews.json.
 Run metadata (node, model, start/end) is read from logs/penny_<job>.log when it is present.
+People counts shown on the site exclude people below --min-confidence (default 0.5: search-snippet staff
+the profile stage could not confirm) when the results folder still has its talent.db; scores.csv keeps the
+full counts. Pass --min-confidence 0 to show everyone.
 """
 from __future__ import annotations
-import argparse, csv, html, json, re, shutil
+import argparse, csv, html, json, re, shutil, sqlite3
 from pathlib import Path
 
 CSS = """
@@ -52,9 +55,46 @@ def run_meta(job: str) -> dict:
     m["skipped"] = len(re.findall(r"ERROR talent\.stages\.pipeline: \S+ failed", txt))
     return m
 
+def floored_people(db: Path, floor: float) -> dict | None:
+    """Per-company people counts at confidence >= floor, from the run's talent.db (None when the DB is absent).
+    Returns {company_id: {"named_people": n, "counts": {role_bucket: n}, "hidden": n}}."""
+    if floor <= 0 or not db.exists():
+        return None
+    con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+    out: dict = {}
+    for cid, conf, j in con.execute("SELECT company_id, confidence, json FROM people"):
+        d = out.setdefault(cid, {"named_people": 0, "counts": {}, "hidden": 0})
+        if (conf or 0) >= floor:
+            d["named_people"] += 1
+            b = (json.loads(j).get("role_bucket") or "named_staff")
+            d["counts"][b] = d["counts"].get(b, 0) + 1
+        else:
+            d["hidden"] += 1
+    con.close()
+    return out
+
+def floor_dashboard(src: Path, dst: Path, fp: dict, floor: float) -> None:
+    """Copy the pipeline's dashboard.html, rewriting its embedded JSON so per-company people counts and the
+    people list respect the confidence floor. Everything else in the page is left as is."""
+    txt = src.read_text()
+    a = txt.index('<script id="data" type="application/json">') + len('<script id="data" type="application/json">')
+    b = txt.index("</script>", a)
+    data = json.loads(txt[a:b])
+    buckets = {"founders": "founder", "cxos": "cxo", "directors": "director", "decision_makers": "decision_maker", "named_staff": "named_staff"}
+    for c in data["companies"]:
+        d = fp.get(c["company_id"], {"named_people": 0, "counts": {}, "hidden": 0})
+        if "coverage" in c and isinstance(c["coverage"], dict):
+            c["coverage"]["named_people"] = d["named_people"]
+        c["people_counts"] = {k: d["counts"].get(v, 0) for k, v in buckets.items()}
+        c["people"] = [p for p in c.get("people", []) if (p.get("confidence") or 0) >= floor]
+        c["people_hidden"] = d["hidden"]
+    data["meta"]["people_min_confidence"] = floor
+    dst.write_text(txt[:a] + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + txt[b:])
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("results"); ap.add_argument("--out", default="docs")
+    ap.add_argument("--min-confidence", type=float, default=0.5, help="hide people below this confidence (0 shows all)")
     a = ap.parse_args()
     res, out = Path(a.results), Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -63,6 +103,12 @@ def main():
     rows = list(csv.DictReader(open(res / "export/scores.csv")))
     for r in rows:
         r["score_f"] = float(r["score"] or 0); r["cov_f"] = float(r["coverage"] or 0); r["people_i"] = int(float(r["named_people"] or 0))
+    fp = floored_people(res / "talent.db", a.min_confidence)
+    hidden = 0
+    if fp is not None:
+        for r in rows:
+            d = fp.get(r["market"] + ":" + r["ticker"], {"named_people": 0, "hidden": 0})
+            r["people_i"] = d["named_people"]; hidden += d["hidden"]
     rows.sort(key=lambda r: -r["score_f"])
     ovs = json.load(open(res / "overviews.json"))
     ov_by = {o["company_id"]: o for o in ovs}
@@ -71,12 +117,17 @@ def main():
     band_note = ("Every company lands in the weak band (below 25)." if bands["middling"] + bands["strong"] == 0 else
                  f'{bands["weak"]} companies land in the weak band (below 25), {bands["middling"]} reach middling (25-50)'
                  + (f' and {bands["strong"]} strong (above 50).' if bands["strong"] else "."))
+    floor_note = (f" People counts leave out {hidden} search-derived names below confidence {a.min_confidence:g} that the profile stage could not confirm; scores.csv keeps the full counts."
+                  if fp is not None and hidden else "")
     gc = sum(r["going_concern"] in ("True", "true", "1") for r in rows)
     rm = sum(r["reverse_merger"] in ("True", "true", "1") for r in rows)
     e = html.escape
 
     # copies
-    shutil.copy(res / "dashboard.html", out / "dashboard.html")
+    if fp is not None:
+        floor_dashboard(res / "dashboard.html", out / "dashboard.html", fp, a.min_confidence)
+    else:
+        shutil.copy(res / "dashboard.html", out / "dashboard.html")
     shutil.copy(res / "export/scores.csv", out / "scores.csv")
     shutil.copy(res / "overviews.json", out / "overviews.json")
     (out / ".nojekyll").write_text("")
@@ -102,7 +153,7 @@ def main():
 <div class="stat"><b>{gc}</b><span>going-concern flags</span></div>
 <div class="stat"><b>{rm}</b><span>reverse-merger flags</span></div>
 </div>
-<p class="note">Scores come from an 8-billion-parameter model reading microcap filings on an 11 GB GPU. {band_note} The ranking is driven mostly by hiring and headcount momentum; treat it as a screen, not a verdict. Coverage is the fraction of the workforce the score actually saw.</p>
+<p class="note">Scores come from an 8-billion-parameter model reading microcap filings on an 11 GB GPU. {band_note} The ranking is driven mostly by hiring and headcount momentum; treat it as a screen, not a verdict. Coverage is the fraction of the workforce the score actually saw.{e(floor_note)}</p>
 <h2>Top 20 by talent score</h2>
 <table><thead><tr><th>Market</th><th>Ticker</th><th>Company</th><th>Score</th><th>Coverage</th><th>People</th></tr></thead><tbody>{top}</tbody></table>
 <p class="sub" style="margin-top:12px">Full ranking with component breakdowns and flags: <a href="dashboard.html">interactive dashboard</a> or <a href="scores.csv">scores.csv</a>.</p>
@@ -132,7 +183,8 @@ q.addEventListener('input',()=>{{const s=q.value.trim().toLowerCase(); cards.for
 </script>
 </main></body></html>'''
     (out / "overviews.html").write_text(ovp)
-    print(f"wrote {out}/ from {res}: {len(rows)} companies, {len(cards)} overviews")
+    print(f"wrote {out}/ from {res}: {len(rows)} companies, {len(cards)} overviews"
+          + (f", {hidden} people below confidence {a.min_confidence:g} hidden from the counts" if fp is not None else ", no talent.db so counts are as exported"))
 
 if __name__ == "__main__":
     main()

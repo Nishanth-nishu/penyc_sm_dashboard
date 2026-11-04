@@ -24,7 +24,9 @@ filter, scores.csv). Rebuild after a new run with
 python3 build_site.py penny_results/<jobid> && git add docs && git commit -m "site: job <jobid>" && git push
 ```
 
-Vercel redeploys the site about a minute after the push.
+Vercel redeploys the site about a minute after the push. `build_site.py` hides people below confidence 0.5 (default
+`--min-confidence`; 223 snippet-derived staff in job 49508) from the people counts on every page when the results folder
+still has its `talent.db`; `scores.csv` and the database keep everyone.
 
 ## Headline numbers
 
@@ -163,8 +165,9 @@ AGOL, CHANDRIMA, ESSENTIA, JZ. Scores: 98 weak / 2 middling unchanged at the top
 11.7 → 21.8 (20 people with titles), DGXX 7.2 → 15.1, WORTH 10.5 → 17.0, OMEGAIN 10.5 → 16.3, SIKKO 7.5 → 12.3. Cleaning
 the fake people lowered a few US names slightly (A1L 24 → 15 people, SDEV 29 → 21, AMOD 30 → 23; JZ 9.9 → 7.5, XHG 10.4 → 8.2).
 Noise to know about: 223 people sit below confidence 0.5 (47 before) because search snippets now add rank-and-file staff
-("Territory executive", "MLOps Engineer") as `named_staff`; namesakes still slip through for generic company names
-(Bridge Securities, Empower India). The site is built from this run, overviews included.
+("Territory executive", "MLOps Engineer") as `named_staff`; the site's people counts leave them out (1129 shown), and
+namesakes still slip through for generic company names (Bridge Securities, Empower India). The site is built from this
+run, overviews included.
 
 `penny_results/49508/` is the most complete export (100 scored, 96 with people, own overviews); use its `talent.db` as
 `PENNY_RESTORE_DB` for any further rerun.

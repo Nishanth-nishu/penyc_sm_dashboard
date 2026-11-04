@@ -21,7 +21,7 @@ Scores are 0-100; the pipeline's own bands are weak (<25), middling (25-50), str
 | | |
 |---|---|
 | Companies scored | 100 of 100 (job 49508 export); 98 weak, 2 middling: Tenax Therapeutics 30.3, GACM Technologies 25.9 |
-| Companies with named people | 96 (1352 people; the web pass named people at 21 of the 24 that filings left empty; still empty: AGOL, CHANDRIMA, ESSENTIA, JZ). 646 people carry profile links from the `profiles` stage; 0 role/company/agency names remain after the resolve filter |
+| Companies with named people | 96 (1352 people, 1129 at confidence ≥ 0.5; the web pass named people at 21 of the 24 that filings left empty; still empty: AGOL, CHANDRIMA, ESSENTIA, JZ). 646 people carry profile links from the `profiles` stage; 0 role/company/agency names remain after the resolve filter. The site hides the 223 snippet-derived names below confidence 0.5 from its people counts (`build_site.py --min-confidence`, default 0.5); `scores.csv` keeps the full counts |
 | Still skipped | none. The 8 loopers (A1L, GATECH, GPRO, IPDN, TENX, XHG, XPON, DFDV) are scored since job 48860 (`num_predict: 4096` cap) |
 | Job in progress | none. Last finished: 49508 (gnode095 GPU, 30 Oct 19:14-20:43 UTC, 1 h 29 min, 0 errors): LLM web pass over **all 100 companies** with a fresh search cache from 49406's DB. Restore DB for any further rerun: `penny_results/49508/talent.db` |
 | Website | **Live at https://penycsmdashboard.vercel.app/** (Vercel project `penyc_sm_dashboard`, team nishanth-nishus-projects, Git-connected to this repo). `vercel.json` serves `docs/` as a static site with no build step; every push to `main` redeploys in under a minute. GitHub Pages is not used. |
@@ -171,6 +171,9 @@ python3 build_site.py penny_results/<job> && git add docs && git commit -m "site
    people, 0 non-person names left (118 before), 646 people with profile links (102 before), web_page
    docs 114 → 319. Site rebuilt from 49508 with its own overviews (commit 9ea924f). Still empty: AGOL,
    CHANDRIMA, ESSENTIA, JZ.
+17. Confidence floor on the site: `build_site.py --min-confidence` (default 0.5) reads the run's `talent.db`
+   and hides low-confidence snippet staff (223 in 49508) from every people count, including inside the
+   copied dashboard's embedded JSON; the data and `scores.csv` are untouched.
 
 ## 6. Cluster lessons (read before running anything)
 
